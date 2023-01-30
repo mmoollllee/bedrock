@@ -1,0 +1,13 @@
+.position-full {
+   @include position-absolute();
+   z-index: -1;
+
+   & + * {
+      position: relative;
+      z-index: 1;
+   }
+}
+
+.position-ontop {
+   @include position-absolute()
+}

@@ -1,0 +1,38 @@
+.adresse {
+   
+   @include media-breakpoint-up(s) {
+      text-align: left;
+   }
+
+   & > * {
+      padding-bottom: .5em;
+   }
+}
+
+.border-top {
+   border-top: 1px solid #fff;
+   padding-top: 20px;
+}
+
+#menu-footermenue {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   justify-content: space-around;
+   margin-bottom: 3em;
+   
+   & > * {
+      flex: 0 0 auto;
+      padding: .5em;
+   }
+
+   a:hover {
+      text-decoration: underline;
+   }
+}
+
+#footer {
+   .wpcf7 {
+      margin-top: 4rem
+   }
+}

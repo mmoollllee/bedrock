@@ -1,0 +1,112 @@
+.button, button {
+   padding: .5em 0 .5em 0;
+   color: #000;
+   display: inline-block;
+   background: none;
+   border: 0;
+   cursor: pointer;
+   text-align: left;
+   transition: $transition-base;
+   position: relative;
+
+   &:after {
+      position: absolute;
+      opacity: 0;
+      background: #000;
+      height: 2px;
+      bottom: .2em;
+      left: 0;
+      right: 0;
+      font-size: 1.4em;
+      content: " ";
+      transition: $transition-base;
+   }
+
+   &:hover,
+   &:active {
+      text-decoration: none;
+
+      &:after {
+         opacity: 1;
+      }
+   }
+
+
+   i {
+      bottom: -.05em;
+      font-size: .8em;
+      margin-right: .3em;
+   }
+}
+
+.button {
+   &:before {
+      transition: $transition-base;
+      background: $primary;
+      height: 1.1em;
+      width: 5px;
+      content: "";
+      position: absolute;
+      margin-left: -.7em;
+      margin-top: .1em;
+   }
+
+   &[data-icon-left]:before {
+      @extend %icon-font-stuff;
+      color: inherit;
+      content: attr(data-icon-left);
+      background: none;
+   }
+
+   &.button-small {
+      font-size: 1em;
+      padding-top: 0;
+
+      &:before {
+         font-size: 1.2em;
+      }
+      &:after {
+         left: 1.8em
+      }
+   }
+
+   .color-white & {
+      color: #fff;
+      &:after {
+         background: #fff;
+      }
+   }
+
+}
+
+.border-button {
+   border: 1px solid #fff;
+   padding: 0.5em;
+   transition: 0.5s border-color, 0.5s padding;
+   font-size: 0.9em;
+
+   &:hover {
+      a {
+         color: inherit;
+         &:before {
+            transform: translate(3px, -50%);
+         }
+      }
+   }
+}
+ 
+.cta {
+   color: $gray !important;
+   background: $light;
+   display: inline-block;
+   text-align: center;
+   margin-top: 1em;
+   padding: 0.5em 1em;
+   transition: $transition-base;
+   cursor: pointer;
+
+   &:hover {
+         background: $primary;
+         color: #fff !important;
+   }
+}

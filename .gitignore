@@ -1,16 +1,18 @@
+*.DS_Store
+
 # Application
-web/app/plugins/*
-!web/app/plugins/.gitkeep
+web/app/plugins/*/
 web/app/mu-plugins/*/
-web/app/themes/twentytwentythree/
+!web/app/mu-plugins/acf-code-field/
+web/app/themes/twentytwentytwo/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/cache/*
+*_backup_*.zip
 
 # WordPress
 web/wp
-web/.htaccess
 
 # Logs
 *.log
@@ -25,3 +27,12 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# WP Super Cache
+web/app/cache/*
+
+# VS Code
+.vscode
+
+# NPM
+node_modules

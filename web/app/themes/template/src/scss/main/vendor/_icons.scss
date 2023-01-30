@@ -1,0 +1,170 @@
+@font-face {
+font-family: "icon-font";
+src: url("./fonts/icon-font.ttf?ed0234183b3476c7a7c1c18f5655bd73") format("truetype"),
+url("./fonts/icon-font.woff?ed0234183b3476c7a7c1c18f5655bd73") format("woff"),
+url("./fonts/icon-font.woff2?ed0234183b3476c7a7c1c18f5655bd73") format("woff2"),
+url("./fonts/icon-font.eot?ed0234183b3476c7a7c1c18f5655bd73#iefix") format("embedded-opentype"),
+url("./fonts/icon-font.svg?ed0234183b3476c7a7c1c18f5655bd73#icon-font") format("svg");
+font-display: swap;
+}
+
+%icon-font-stuff {
+font-family: icon-font !important;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+speak: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+line-height: inherit;
+}
+
+@mixin icon($content) {
+content: $content;
+@extend %icon-font-stuff;
+}
+
+[data-icon]:before {
+@extend %icon-font-stuff;
+content: attr(data-icon);
+}
+
+[data-icon-right]:after {
+@extend %icon-font-stuff;
+content: attr(data-icon-right);
+}
+
+[data-icon-left]:before {
+@extend %icon-font-stuff;
+content: attr(data-icon-left);
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+@extend %icon-font-stuff;
+}
+
+// *:not(:empty)[class^="icon-"]:before, *:not(:empty)[class*=" icon-"]:before {
+//     padding-right: .5em
+// }
+
+$icon-font-map: (
+    "address": "\f101",
+    "angle-down": "\f102",
+    "angle-left": "\f103",
+    "angle-right": "\f104",
+    "angle-up": "\f105",
+    "arrow-down": "\f106",
+    "arrow-left": "\f107",
+    "arrow-right": "\f108",
+    "arrow-up": "\f109",
+    "bars": "\f10a",
+    "check": "\f10b",
+    "chevron-small-down": "\f10c",
+    "chevron-small-left": "\f10d",
+    "chevron-small-right": "\f10e",
+    "chevron-small-up": "\f10f",
+    "close": "\f110",
+    "cookie-bite": "\f111",
+    "envelope": "\f112",
+    "facebook-square": "\f113",
+    "fax": "\f114",
+    "instagram-brands": "\f115",
+    "map": "\f116",
+    "maximize": "\f117",
+    "phone-alt": "\f118",
+    "phone": "\f119",
+    "sliders-h": "\f11a",
+    "times": "\f11b",
+    "tools": "\f11c",
+    "traffic-cone": "\f11d",
+);
+
+.icon-address:before {
+    content: map-get($icon-font-map, "address");
+}
+.icon-angle-down:before {
+    content: map-get($icon-font-map, "angle-down");
+}
+.icon-angle-left:before {
+    content: map-get($icon-font-map, "angle-left");
+}
+.icon-angle-right:before {
+    content: map-get($icon-font-map, "angle-right");
+}
+.icon-angle-up:before {
+    content: map-get($icon-font-map, "angle-up");
+}
+.icon-arrow-down:before {
+    content: map-get($icon-font-map, "arrow-down");
+}
+.icon-arrow-left:before {
+    content: map-get($icon-font-map, "arrow-left");
+}
+.icon-arrow-right:before {
+    content: map-get($icon-font-map, "arrow-right");
+}
+.icon-arrow-up:before {
+    content: map-get($icon-font-map, "arrow-up");
+}
+.icon-bars:before {
+    content: map-get($icon-font-map, "bars");
+}
+.icon-check:before {
+    content: map-get($icon-font-map, "check");
+}
+.icon-chevron-small-down:before {
+    content: map-get($icon-font-map, "chevron-small-down");
+}
+.icon-chevron-small-left:before {
+    content: map-get($icon-font-map, "chevron-small-left");
+}
+.icon-chevron-small-right:before {
+    content: map-get($icon-font-map, "chevron-small-right");
+}
+.icon-chevron-small-up:before {
+    content: map-get($icon-font-map, "chevron-small-up");
+}
+.icon-close:before {
+    content: map-get($icon-font-map, "close");
+}
+.icon-cookie-bite:before {
+    content: map-get($icon-font-map, "cookie-bite");
+}
+.icon-envelope:before {
+    content: map-get($icon-font-map, "envelope");
+}
+.icon-facebook-square:before {
+    content: map-get($icon-font-map, "facebook-square");
+}
+.icon-fax:before {
+    content: map-get($icon-font-map, "fax");
+}
+.icon-instagram-brands:before {
+    content: map-get($icon-font-map, "instagram-brands");
+}
+.icon-map:before {
+    content: map-get($icon-font-map, "map");
+}
+.icon-maximize:before {
+    content: map-get($icon-font-map, "maximize");
+}
+.icon-phone-alt:before {
+    content: map-get($icon-font-map, "phone-alt");
+}
+.icon-phone:before {
+    content: map-get($icon-font-map, "phone");
+}
+.icon-sliders-h:before {
+    content: map-get($icon-font-map, "sliders-h");
+}
+.icon-times:before {
+    content: map-get($icon-font-map, "times");
+}
+.icon-tools:before {
+    content: map-get($icon-font-map, "tools");
+}
+.icon-traffic-cone:before {
+    content: map-get($icon-font-map, "traffic-cone");
+}

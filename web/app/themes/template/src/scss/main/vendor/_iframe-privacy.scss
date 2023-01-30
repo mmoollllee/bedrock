@@ -1,0 +1,59 @@
+.iframe-privacy--wrapper {
+   min-height: 270px;
+   background: rgba(0, 0, 0, 0.03);
+   position: relative;
+   max-width: 100%;
+   width: 100%;
+   margin: 0 auto;
+
+   iframe {
+      height: 100%;
+      width: 100%;
+   }
+
+   .iframe-privacy--message {
+      background: rgb(255, 255, 255);
+      border-radius: 5px;
+      max-width: 400px;
+      width: 80%;
+      margin: auto;
+      padding: 20px 30px;
+      position: absolute;
+      left: 50%;
+      margin: 2rem;
+      transform: translate(calc(-50% - 2rem));
+      z-index: 1000;
+      text-align: center;
+      .iframe-privacy--source {
+         color: $gray-600;
+      }
+
+      .button {
+         padding: 0.6rem 0.9rem !important;
+         border: 1px solid #000 !important;
+         background-color: transparent;
+         margin: 1rem 0 1rem 0;
+         display: inline-block;
+         text-decoration: none !important;
+         cursor: pointer;
+
+         &:hover {
+            background-color: #e8e8e8;
+         }
+      }
+
+      .play-button {
+         padding-bottom: 1em;
+         display: block;
+         &:before {
+            position: relative;
+            font-size: 5em;
+            cursor: pointer;
+            color: $primary;
+         }
+         &:hover:before {
+            color: $secondary;
+         }
+      }
+   }
+}

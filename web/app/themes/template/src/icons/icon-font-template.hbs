@@ -1,0 +1,62 @@
+@font-face {
+font-family: "{{ name }}";
+src: {{{ fontSrc }}};
+font-display: swap;
+}
+
+%icon-font-stuff {
+font-family: {{ name }} !important;
+font-style: normal !important;
+font-weight: normal !important;
+font-variant: normal !important;
+text-transform: none !important;
+speak: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+position: relative;
+line-height: inherit;
+}
+
+@mixin icon($content) {
+content: $content;
+@extend %icon-font-stuff;
+}
+
+[data-icon]:before {
+@extend %icon-font-stuff;
+content: attr(data-icon);
+}
+
+[data-icon-right]:after {
+@extend %icon-font-stuff;
+content: attr(data-icon-right);
+}
+
+[data-icon-left]:before {
+@extend %icon-font-stuff;
+content: attr(data-icon-left);
+}
+
+{{# if selector }}
+{{ selector }}:before {
+{{ else }}
+{{ tag }}[class^="{{prefix}}-"]:before, {{ tag }}[class*=" {{prefix}}-"]:before {
+{{/ if }}
+@extend %icon-font-stuff;
+}
+
+${{ name }}-map: (
+{{# each codepoints }}
+    "{{ @key }}": "\\{{ codepoint this }}",
+{{/ each }}
+);
+
+{{# each codepoints }}
+{{# if ../selector }}
+{{ ../selector }}.{{ ../prefix }}-{{ @key }}:before {
+{{ else }}
+{{ tag }}.{{ ../prefix }}-{{ @key }}:before {
+{{/ if }}
+    content: map-get(${{ ../name }}-map, "{{ @key }}");
+}
+{{/ each }}

@@ -1,0 +1,17 @@
+{
+   "name": "mmoollllee/button",
+   "title": "Button",
+   "category": "layout",
+   "icon": "button",
+   "description": "Example block written with ESNext standard and JSX support – build step required.",
+   "textdomain": "button",
+   "supports": {
+      "anchor": false,
+      "align": true,
+      "alignWide": false,
+      "reusable": false
+   },
+   "editorScript": "file:./build/index.js",
+   "editorStyle": "file:./build/index.css",
+   "style": "file:./build/style-index.css"
+}

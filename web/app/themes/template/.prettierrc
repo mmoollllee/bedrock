@@ -1,0 +1,8 @@
+{
+   "semi": false,
+   "trailingComma": "es5",
+   "tabWidth": 3,
+   "arrowParens": "always",
+   "singleQuote": true,
+   "braceStyle": "1tbs"
+}

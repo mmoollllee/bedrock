@@ -1,0 +1,149 @@
+#wrapper > nav {
+   position: sticky;
+   top: 0px;
+   z-index: 999;
+   font-size: 1em;
+   overflow: visible;
+   color: #000;
+
+   .row {
+      position: relative;
+      z-index: 2;
+   }
+}
+
+nav .logo img {
+
+   @include media-breakpoint-up(s) {
+      max-width: 400px;
+   }
+}
+
+.menu {
+   padding: 0;
+   list-style: none;
+   margin-bottom: 0;
+
+   &:not(.container) {
+      margin: 0;
+      padding: 0;
+   }
+
+   & > li {
+      width: auto;
+      padding-right: 15px;
+
+      a {
+         text-decoration: none;
+         color: inherit;
+         transition: 0.3s all;
+         color: inherit;
+         font-weight: 400;
+         position: relative;
+         margin-right: 1em;
+
+         @include media-breakpoint-up(l) {
+            margin-right: 2em;
+         }
+
+         &:hover, &.is-hover {
+            color: $primary
+         }
+      }
+
+      .sub-menu {
+         list-style: none;
+         padding: 0;
+
+         a {
+            color: $white;
+            font-weight: 400;
+            white-space: nowrap;
+
+            &:after {
+               content: ''
+            }
+
+            &:hover {
+               color: $gray
+            }
+         }
+      }
+   }
+}
+
+#header .menu {
+   display: flex;
+
+   @media (min-width:1100px) {
+      justify-content: space-between;
+   }
+
+   & > li {
+
+      .sub-menu {
+         max-width: 0;
+         opacity: 0;
+         max-height: 3em;
+         overflow: hidden;
+         transition: 1s max-height, 1s max-width, 1s opacity;
+         padding-bottom: 10px;
+
+         @media (min-width:1050px) {
+            opacity: 1;
+            max-width: 9.5em;
+         }
+
+         @media (min-width: 1100px) {
+            max-width: 50em;
+         }
+      }
+
+      &:hover, &.is-hover {
+         .sub-menu {
+            max-width: 50em;
+            max-height: 50em;
+            transition: 1s max-height, 1s max-width, 1s opacity;
+            opacity: 1;
+         }
+      }
+   }
+
+   .scrolled & {
+
+      .sub-menu {
+         max-height: 0;
+         opacity: 0;
+      }
+
+   }
+}
+
+#navtoggle, #navclose {
+   color: $dark;
+   padding: 0;
+   font-size: 1.2em;
+   width: 2em;
+   height: 2em;
+   line-height: 2em;
+   border-radius: 50%;
+   background-color: $white;
+   transition: $transition-base;
+   text-align: center;
+
+   &:hover {
+      color: $white;
+      background-color: $primary;
+   }
+
+   &:after {
+      content: none;
+   }
+}
+
+.single-projekte .details {
+   p {
+      font-size: .9em;
+      line-height: 1.6;
+   }
+}

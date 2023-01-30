@@ -1,0 +1,175 @@
+input,
+textarea,
+select {
+   width: 100%;
+   font-size: 1em;
+   line-height: 1.3;
+   padding: 0.5em .5em .5em 1.5em !important;
+   box-sizing: border-box;
+   margin: 0 0 1em 0;
+   border: 1px solid #ccc;
+   background: #fff;
+   -webkit-appearance: none;
+   appearance: none;
+   outline: none !important;
+   color: #000;
+   transition: $transition-base;
+
+   &:placeholder-shown {
+      color: #000;
+   }
+
+   &:not(:required) {
+      opacity: .6;
+   }
+
+   &[aria-required='true'] {
+      opacity: 1 !important;
+   }
+
+   &:focus {
+      opacity: 1;
+   }
+
+   &:focus,
+   &:not(:placeholder-shown) {
+      opacity: 1;
+   }
+}
+
+input[name="fax"] {
+   display: none
+}
+ 
+.error {
+padding-bottom: 1em;
+margin-top: -1em
+}
+
+// .sent .wpcf7-submit {
+// pointer-events: none;
+// color: green;
+// cursor: default
+// }
+
+input[type='submit'] {
+   cursor: pointer;
+}
+
+input[type='checkbox'] {
+   background: none;
+   appearance: none;
+   border: 1px solid $font-color;
+   height: 1.1em;
+   width: 1.1em;
+   margin-left: 0.2rem;
+   margin-right: 0.3rem;
+   padding: 0.2em !important;
+   display: inline-block;
+   background-clip: content-box;
+   margin-bottom: -2px;
+
+   .dark & {
+      border-color: #fff;
+   }
+
+   &:hover,
+   &:focus,
+   &:checked {
+      border-color: $font-color;
+   }
+
+   &:checked {
+      background-color: $font-color;
+      border: 1px solid $font-color;
+      padding: 2px !important;
+      background-clip: content-box;
+
+      .dark & {
+         background-color: #fff;
+         border-color: #fff;
+      }
+   }
+}
+
+// textarea {
+//    min-height: 200px;
+// }
+
+[aria-invalid='true'],
+.wpcf7-not-valid {
+   border-color: $red !important;
+   border-style: dashed !important;
+}
+
+.screen-reader-response {
+   display: none;
+
+   &[data-status] {
+      margin-top: 1rem;
+      border: 1px dashed var(--danger, red);
+      padding: 5px 8px;
+      display: block;
+      margin-bottom: 1em;
+   }
+
+   &[data-status='mail_sent'] {
+      border: 1px dashed var(--success, green);
+   }
+
+   &:empty {
+      display: none !important;
+   }
+
+   ul {
+      display: none;
+   }
+}
+
+label {
+   &, * {
+      cursor: pointer;
+   }
+}
+
+.wpcf7 {
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.wpcf7-form {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-right: -10px;
+   margin-left: -10px;
+
+   > * {
+      position: relative;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-bottom: 0;
+      text-align: left;
+   }
+
+   .wpcf7-submit {
+      padding-top: 0;
+   }
+
+   .wpcf7-response-output {
+      flex-basis: 100%;
+   }
+
+   .privacy {
+      cursor: pointer;
+      color: inherit;
+      text-align: left;
+
+      a {text-decoration: underline;}
+
+      .dark & {
+         color: #fff;
+      }
+   }
+}

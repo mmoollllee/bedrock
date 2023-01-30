@@ -1,8 +1,8 @@
 {
-  "name": "roots/bedrock",
+  "name": "mmoollllee/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
+  "description": "WordPress boilerplate with modern development tools, based on roots/bedrock. Shipped with a custom Wordpress template and some kind of page-builder",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
@@ -14,6 +14,11 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Moritz Graf",
+      "email": "mg@moritz-graf.de",
+      "homepage": "https://github.com/mmoollllee"
     }
   ],
   "keywords": [
@@ -28,6 +33,14 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "composer",
+      "url": "https://pivvenit.github.io/acf-composer-bridge/composer/v2/wordpress-plugin/"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/mmoollllee/bedrock-deployer"
     }
   ],
   "require": {
@@ -40,25 +53,44 @@
     "roots/wordpress": "6.1.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
-    "wpackagist-theme/twentytwentythree": "^1.0"
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.10",
+    "stoutlogic/acf-builder": "1.12.0",
+    "wpackagist-plugin/autoptimize": "^3.0",
+    "wpackagist-plugin/contact-form-7": "^5.4",
+    "wpackagist-plugin/contact-form-7-honeypot": "^2.1",
+    "wpackagist-plugin/duplicate-post": "^4.1",
+    "wpackagist-plugin/google-sitemap-generator": "^4.1",
+    "wpackagist-plugin/redirection": "^5.1",
+    "wpackagist-plugin/resmushit-image-optimizer": "^0.4.1",
+    "wpackagist-plugin/wp-statistics": "^13.1",
+    "wpackagist-plugin/wp-super-cache": "^1.7",
+    "wpackagist-plugin/save-with-keyboard": "^3.0.2",
+    "wpackagist-plugin/simple-history":"^3.3",
+    "wpackagist-plugin/duplicate-menu":"^0.2",
+    "wpackagist-plugin/rename-wp-login":"^2.6",
+    "wpackagist-plugin/regenerate-thumbnails": "^3.1",
+    "wpackagist-plugin/wp-nested-pages": "^3.1",
+    "mmoollllee/bedrock-deployer": "dev-deployer-7"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "wpackagist-plugin/wordpress-importer": "^0.7"
   },
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "allow-plugins": {
       "composer/installers": true,
-      "roots/wordpress-core-installer": true
+      "roots/wordpress-core-installer": true,
+      "pivvenit/acf-pro-installer": true
     }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "advanced-custom-fields/advanced-custom-fields-pro", "wpackagist-plugin/duplicate-post", "wpackagist-plugin/save-with-keyboard", "wpackagist-plugin/simple-taxonomy-ordering",  "wpackagist-plugin/duplicate-menu"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

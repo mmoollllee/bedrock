@@ -1,0 +1,44 @@
+[data-icon]:before {
+  @extend %icon-font-stuff;
+  position: relative;
+  top: 0;
+  content: attr(data-icon);
+}
+
+[data-icon-right]:after {
+  @extend %icon-font-stuff;
+  content: attr(data-icon-right);
+}
+
+[data-icon-left]:before {
+  @extend %icon-font-stuff;
+  content: attr(data-icon-left);
+}
+
+[class^="icon-"], [class*=" icon-"], [data-icon-left]{
+  position: relative;
+  &:before {
+    @extend %icon-font-stuff;
+  }
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before,
+[data-icon-left]:before,
+[data-icon-right]:after {
+  // margin-top: .1em;
+  left: -.1em;
+  line-height: 1;
+}
+
+.icon-close:before {
+  font-size: .9em;
+}
+
+.button.icon-close:before,
+.button.icon-close:after {
+  font-size: 1.1em;
+}
+
+.icon-envelope:before {
+  bottom: -.15em
+}

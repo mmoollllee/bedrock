@@ -1,0 +1,37 @@
+.breadcrumb-trail {
+   flex-basis: 100%;
+   max-width: 100%;
+
+   .trail-items {
+      padding: 0;
+      margin-bottom: 0;
+
+      & > * {
+         display: inline-block;
+      }
+
+      a {
+         text-decoration: none;
+         transition: 0.3s;
+         color: inherit;
+      }
+
+      .trail-item {
+         position: relative;
+         &:after {
+            bottom: -.2em;
+            @extend %icon-font-stuff;
+            content:map-get($icon-font-map, "chevron-small-right");
+         }
+      }
+
+      .trail-begin {
+      }
+
+      .trail-end {
+         &:after {
+            content: none;
+         }
+      }
+   }
+}

@@ -1,0 +1,69 @@
+.fancybox-container .d-none {
+   display: inline-block !important;
+}
+
+.fancybox-stage .fancybox-content {
+   max-width: 1000px !important;
+}
+
+.fancybox-stage .fancybox-slide--image .fancybox-content {
+   max-width: initial !important;
+}
+
+.fancybox-image[src$='.png'] {
+   background-color: #fff !important;
+}
+
+.fancybox-container .fancybox-video.d-none {
+   display: block !important;
+}
+
+.fancybox-slide--html > .fancybox-content {
+   overflow: initial !important;
+}
+
+[data-fancybox]:not([data-src]) {
+   position: relative;
+   display: inline-block;
+   &:after {
+      @extend %icon-font-stuff;
+      position: absolute;
+      right: .5em;
+      bottom: .5em;
+      content: map-get($icon-font-map, "maximize");
+      color: #fff;
+      transition: $transition-base;
+   }
+
+   &:hover {
+      &:after {
+         color: $primary
+      }
+   }
+}
+
+.fancybox__content {
+   .container {
+      background: #fff !important;
+   }
+}
+
+.carousel__button {
+   &, * {
+      color: #fff;
+   }
+   &:hover {
+      &, * {
+         color: $primary;
+      }
+   }
+   &:after {
+      content: none
+   }
+}
+
+.carousel {
+   figure {
+      margin-bottom: 0;
+   }
+}

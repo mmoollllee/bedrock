@@ -1,0 +1,41 @@
+
+.slider {
+   height: 33vw;
+   min-height: 40vh;
+   max-height: 66vh;
+   overflow: hidden;
+
+   img {
+      height: 33vw;
+      min-height: 40vh;
+      max-height: 66vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+   }
+}
+
+.carousel__slide {
+   --carousel-slide-width: 100%;
+   padding:0
+}
+
+.carousel-free {
+   .carousel__slide {
+      --carousel-slide-width: auto;
+      margin-left: .5em;
+      margin-right: .5em;
+      opacity: .5;
+      &.is-selected {
+         opacity: 1;
+      }
+
+      img {
+         width: auto;
+      }
+   }
+}
+
+.carousel-free, .carousel {
+   position: relative;
+}

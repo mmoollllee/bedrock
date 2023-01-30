@@ -1,0 +1,26 @@
+#notification {
+   background: #fff;
+   color: $gray;
+
+   svg {
+      max-width: 70px;
+      * {
+         fill: $gray;
+      }
+   }
+
+   &.dark {
+      background: transparent;
+      color: inherit;
+
+      svg {
+         * {
+            fill: #fff;
+         }
+      }
+   }
+
+   p {
+      line-height: 1.1;
+   }
+}

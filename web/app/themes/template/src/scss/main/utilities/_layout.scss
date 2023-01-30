@@ -1,0 +1,32 @@
+.anchor {
+   position: absolute;
+   transform: translateY(-15vh);
+   left: 0
+}
+
+.bg-full {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
+.bg-transparent {
+   background: transparent !important;
+}
+
+[class*="col"]:not(.row)>[class*="col"] {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+// hr {
+// 	border-top-width: 3px;
+// }

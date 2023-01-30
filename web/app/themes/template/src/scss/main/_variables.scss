@@ -1,0 +1,21 @@
+// Variables
+// Bootstrap Variables: "../../node_modules/bootstrap/scss/variables"
+
+// Color system
+$gray: #424242;
+$green: #8EC152;
+$font-color: #989898;
+$font-gray: #363331;
+$font-dark: rgb(165,165,165);
+
+$primary: $green;
+$primary-gradient: linear-gradient(270deg, #9BC555 0%, #64AA11 100%);
+$gray-gradient: linear-gradient(161deg, #F4F4F4 0%, #FBFBFB 100%);
+
+$dark: #191919;
+
+$font-family-sans-serif:      "Hind", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$template-path: '/app/themes/template';
+
+$container-gutter-x: 8em;

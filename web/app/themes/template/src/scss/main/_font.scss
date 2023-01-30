@@ -1,0 +1,134 @@
+body {
+   font-size: 18px;
+   color: #000;
+   font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+   width: 100%;
+   display: block;
+   line-height: 1;
+   color: #000
+}
+
+// p {
+//    -webkit-hyphens: auto;
+//    -moz-hyphens: auto;
+//    -ms-hyphens: auto;
+//    hyphens: auto;
+// }
+
+h1,
+.h1 {
+   font-size: 1rem;
+}
+
+h2,
+.h2 {
+   font-weight: 700;
+   letter-spacing: 0.08em;
+   font-size: 1.7rem;
+   margin: .5em 0 1em;
+
+   // @include media-breakpoint-up(sm) {
+   //    font-size: 3rem;
+   // }
+
+   // @include media-breakpoint-up(l) {
+   //    font-size: 4rem;
+   // }
+
+   small {
+      font-size: 1rem;
+      font-weight: 300;
+      display: block;
+   }
+   a {
+      text-decoration: none;
+   }
+}
+
+h3,
+.h3 {
+   font-weight: 400;
+   font-size: 1.5rem;
+
+   @include media-breakpoint-up(md) {
+   }
+}
+
+h4,
+.h4 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: inherit
+}
+
+h5,
+.h5 {
+   color: inherit;
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+main p {
+   line-height: 1.4;
+   margin: .5em 0 1.5em;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+
+   &:hover {
+      color: inherit
+   }
+
+   &[data-icon-left],
+   &[data-icon-right] {
+      text-decoration: none;
+   }
+}
+
+button {
+   -webkit-appearance: none;
+   appearance: none;
+   padding: 0;
+   margin: 0;
+   background: 0 0;
+   color: #000;
+   border: 0 none;
+   cursor: pointer;
+}
+
+p a:not([class]),
+a>small {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  &:hover {
+   text-decoration: none
+  }
+}
+
+footer p a:not([class]) {
+  color: inherit
+}
+
+small,
+.small {
+   font-size: 90%;
+   color: $font-gray
+}

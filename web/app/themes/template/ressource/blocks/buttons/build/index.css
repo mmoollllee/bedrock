@@ -1,0 +1,17 @@
+.wp-block[data-align='center'] > .wp-block-mmoollllee-buttons {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.wp-block[data-align='right'] > .wp-block-mmoollllee-buttons {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.wp-block-mmoollllee-buttons > .block-list-appender {
+   display: inline-block;
+}
+
+/*# sourceMappingURL=index.css.map*/
