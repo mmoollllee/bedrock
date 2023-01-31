@@ -75,7 +75,7 @@
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
     "roave/security-advisories": "dev-latest",
-    "wpackagist-plugin/wordpress-importer": "^0.7"
+    "wpackagist-plugin/wordpress-importer": "^0.8"
   },
   "config": {
     "optimize-autoloader": true,
