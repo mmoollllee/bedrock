@@ -90,7 +90,7 @@ $meta = !empty(get_field('meta_keywords'))
       <header>
       <?php
          foreach ($header_ids as $id) :
-            $gallery = get_field('background', $id);
+            $gallery = get_field('background', $id) ?: [];
             $overlay = get_field('overlay', $id) ? 'overlay-'.get_field('overlay', $id) : '';
             $size = get_field('size', $id);
             $caption = get_field('caption', $id);

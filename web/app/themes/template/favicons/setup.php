@@ -11,7 +11,7 @@ add_action('wp_head', function () {
     <!-- launcher (Android/Chrome) -->
     <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/favicons/site.webmanifest">
 
-    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/favicons/safari-pinned-tab.svg" color="#579189">">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/favicons/safari-pinned-tab.svg" color="#579189">
 
     <meta name="msapplication-TileColor" content="#579189">
     <meta name="theme-color" content="#579189">

@@ -10,8 +10,12 @@
 				$facebook = get_field('facebook', 'option');
 				$instagram = get_field('instagram', 'option');
 			?>
+			<?php if ($facebook): ?>
 				<a href="<?= $facebook['url']; ?>" title="<?= $facebook['title']; ?>" <?= $facebook['target'] ? 'target="'.$facebook['target'].'"' : ''; ?> class="icon-facebook-square"></a>
+			<?php endif; ?>
+			<?php if ($facebook): ?>
 				<a href="<?= $instagram['url']; ?>" title="<?= $instagram['title']; ?>" <?= $instagram['target'] ? 'target="'.$instagram['target'].'"' : ''; ?> class="icon-instagram-brands"></a>
+			<?php endif; ?>
 			</div>
 
 			<div class="col-12 col-md justify-self-end text-md-right">
