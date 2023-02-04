@@ -2,7 +2,7 @@
    display: flex;
    flex-wrap: wrap;
    list-style: none;
-   justify-content: space-around;
+   justify-content: center;
    margin-bottom: 3em;
    
    & > * {
@@ -10,11 +10,15 @@
       padding: .5em;
    }
 
-   a:hover {
-      text-decoration: underline;
+   a {
+      color: $primary;
+      &:hover {
+         text-decoration: underline;
+      }
    }
 }
 
 #footer {
    overflow: visible;
+   background: #fff;
 }

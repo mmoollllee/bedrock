@@ -1,3 +1,36 @@
+a[href^="tel:"],
+a[href^="mailto:"] {
+   text-decoration: none !important;
+   margin-left: .5em;
+   padding-right: .5em;
+   &:before {
+      @extend %icon-font-stuff;
+      margin-left: .5em;
+      margin-right: 1em;
+   }
+}
+a[href^="tel:"]:before {
+   content: map-get($icon-font-map, "phone");
+}
+
+a[href^="mailto:"]:before {
+   content: map-get($icon-font-map, "envelope");
+}
+
+.anschrift {
+  margin-left: .5em;
+  padding-left: 2em;
+  display: block;
+  &:before {
+    @extend %icon-font-stuff;
+    content: map-get($icon-font-map, "location-dot");
+    margin-left: -1.3em;
+    display: block;
+    position: absolute;
+    font-size: 1.3em;
+  }
+}
+
 [data-icon]:before {
   @extend %icon-font-stuff;
   position: relative;

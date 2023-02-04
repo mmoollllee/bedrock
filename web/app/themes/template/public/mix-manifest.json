@@ -1,9 +1,9 @@
 {
     "/app.js": "/app.js",
     "/backend.js": "/backend.js",
-    "/main.css": "/main.css",
     "/builder-restrict.css": "/builder-restrict.css",
     "/builder.css": "/builder.css",
     "/backend.css": "/backend.css",
-    "/editor.css": "/editor.css"
+    "/editor.css": "/editor.css",
+    "/main.css": "/main.css"
 }

@@ -77,6 +77,11 @@ add_shortcode('field', function ($atts, $content = null) {
    return get_field($a['name'], $a['id'] ? $a['id'] : $post->id);
 });
 
+add_shortcode('anschrift', function () {
+   $output = "<span class='anschrift'>".get_field("anschrift", "option")."</span>";
+   return $output;
+});
+
 
 /**
  * Adresse-Oeffnungszeiten:

@@ -132,4 +132,5 @@ $enable-deprecation-messages: false;
 @import 'main/table';
 @import 'main/main';
 @import 'main/notification';
-@import 'main/cookiebanner';
+@import "main/vendor/consent-control";
+@import "main/vendor/consent-message";

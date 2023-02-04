@@ -22,7 +22,7 @@ function scrollto(target) {
 }
 
 export default function() {
-   jQuery("a[href*='#'][href!='#']").click(function (e) {
+   jQuery("a[href*='#'][href!='#']").on("click", function (e) {
       var target = jQuery(this).attr('href').split('#')
       if (
          target[0] == '' ||

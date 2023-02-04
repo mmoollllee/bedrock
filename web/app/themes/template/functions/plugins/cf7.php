@@ -12,7 +12,7 @@ add_filter('wpcf7_load_css', '__return_false');
 
 add_action('wp_enqueue_scripts', function () {
 
-   wp_enqueue_script( 'form-script', get_template_directory_uri() . '/public/jquery.cf7.js', array('jquery'), false, true );
+   // wp_enqueue_script( 'form-script', get_template_directory_uri() . '/public/jquery.cf7.js', array('jquery'), false, true );
 
    $wpcf7 = [
       'apiSettings' => [

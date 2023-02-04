@@ -44,7 +44,7 @@
       "bootstrap": "*",
       "consent-control": "^1.0.1",
       "entypo": "*",
-      "jquery": "*",
-      "jquery-on-screen": "*"
+      "jquery": "^3.6.1",
+      "jquery-on-screen": "^1.0.0"
    }
 }

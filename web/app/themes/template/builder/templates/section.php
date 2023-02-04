@@ -9,7 +9,7 @@
 		$layout_classes[] = array_key_exists($value, $layout_map) ? $layout_map[$value] : $value;
 	}
 
-	$code = sort_parts(get_sub_field('code'), $content, $title);
+	$code = sort_parts(get_sub_field('code'), $content, $title, $anchor);
 
 	$has_title = in_array('has-title', $layout) && !$has_title && $title;
 ?>
@@ -32,7 +32,6 @@
 		elseif (isset($code['close']) && !empty($code['close'])):
 			echo $code['return'];
 	?>
-			<?= $anchor ?>
 			<!--childs-->
 		<?= $code['close'] ?>
 	<?php else: ?>

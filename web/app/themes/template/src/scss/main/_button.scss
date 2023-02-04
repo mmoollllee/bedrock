@@ -1,17 +1,15 @@
 .button {
-   padding: 0.7em 1.5em;
+   padding: 0.6em 1.3em;
    color: #fff;
-   background-image: linear-gradient(180deg, #A3BA27 0%, #729317 100%);
-   border: 1px solid #4C6700;
-   box-shadow: 0 6px 25px 9px rgba(104,141,0,0.21);
+   background-image: $primary-gradient;
+   box-shadow: 0 6px 16px -2px rgba(8, 29, 26, 0.3);
    display: inline-block;
    cursor: pointer;
    text-align: left;
-   transition: all .5s ease-out;
+   transition: all 0.5s ease-out;
    position: relative;
    font-weight: 600;
-   text-transform: uppercase;
-   letter-spacing: 1px;
+   letter-spacing: .05em;
    font-size: 0.8em;
 
    &:hover,
@@ -20,9 +18,8 @@
       color: #fff;
       background-size: 400%;
       background-position: 0%;
-      border: 1px solid #97b056;
-      box-shadow: 0 4px 10px 5px rgba(104, 141, 0, 0.4);
-      transform: translateY(-.3em);
+      box-shadow: 0 6px 7px -2px rgba(8, 29, 26, 0.3);
+      transform: translateY(-0.2em);
    }
 
 
@@ -31,17 +28,4 @@
       font-size: .8em;
       margin-right: .3em;
    }
-}
-
-a[href^="tel:"]{
-   text-decoration: none !important;
-   margin-left: .5em;
-   padding-right: .5em;
-   &:before {
-      @extend %icon-font-stuff;
-      content: map-get($icon-font-map, "phone");
-      margin-left: .5em;
-      margin-right: 1em;
-   }
-
 }

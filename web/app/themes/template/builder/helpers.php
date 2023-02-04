@@ -1,6 +1,6 @@
 <?php
 
-function sort_parts($template, $content, $title = '') {
+function sort_parts($template, $content, $title = '', $anchor = false) {
    $close = ''; $return = '';
 
    // replace title tag
@@ -13,6 +13,19 @@ function sort_parts($template, $content, $title = '') {
       $content = str_replace(
          '<!--title-->',
          $title,
+         $content
+      );
+   }
+
+   if ($anchor) {
+      $template = str_replace(
+         '<!--anchor-->',
+         $anchor,
+         $template
+      );
+      $content = str_replace(
+         '<!--anchor-->',
+         $anchor,
          $content
       );
    }

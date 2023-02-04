@@ -1,0 +1,47 @@
+.consent-message--wrapper {
+   max-width: 100%;
+   width: 100%;
+
+   iframe {
+      height: 30vw;
+      max-height: 400px;
+      width: 100%;
+      min-height: 325px;
+   }
+
+}
+
+.consent-message {
+   background: rgb(255, 255, 255);
+   border-radius: 5px;
+   max-width: 400px;
+   width: 80%;
+   margin: auto;
+   padding: 20px 30px;
+   position: absolute;
+   left: 50%;
+   margin: 2rem;
+   transform: translate(calc(-50% - 2rem));
+   z-index: 1000;
+   text-align: center;
+   color: $font-color;
+   
+   p {
+      font-size: 80%;
+   }
+
+   .iframe-privacy--source { color: $gray-600;}
+
+   .button {
+      &:before {
+         @extend %icon-font-stuff;
+         content: map-get($icon-font-map, "check");
+         margin-right: 0.4em;
+         bottom: -0.05em;
+      }
+   }
+
+   a {
+      display: inline;
+   }
+}
