@@ -42,7 +42,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Hind", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: Lato, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -3263,61 +3263,6 @@ progress {
   margin-right: auto;
 }
 
-.iframe-privacy--wrapper {
-  min-height: 270px;
-  background: rgba(0, 0, 0, 0.03);
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-.iframe-privacy--wrapper iframe {
-  height: 100%;
-  width: 100%;
-}
-.iframe-privacy--wrapper .iframe-privacy--message {
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  max-width: 400px;
-  width: 80%;
-  margin: auto;
-  padding: 20px 30px;
-  position: absolute;
-  left: 50%;
-  margin: 2rem;
-  transform: translate(calc(-50% - 2rem));
-  z-index: 1000;
-  text-align: center;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .iframe-privacy--source {
-  color: #6c757d;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .button {
-  padding: 0.6rem 0.9rem !important;
-  border: 1px solid #000 !important;
-  background-color: transparent;
-  margin: 1rem 0 1rem 0;
-  display: inline-block;
-  text-decoration: none !important;
-  cursor: pointer;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .button:hover {
-  background-color: #e8e8e8;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .play-button {
-  padding-bottom: 1em;
-  display: block;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .play-button:before {
-  position: relative;
-  font-size: 5em;
-  cursor: pointer;
-  color: #83be12;
-}
-.iframe-privacy--wrapper .iframe-privacy--message .play-button:hover:before {
-  color: #6c757d;
-}
-
 @font-face {
   font-family: "icon-font";
   src: url("./fonts/icon-font.ttf?ed0234183b3476c7a7c1c18f5655bd73") format("truetype"), url("./fonts/icon-font.woff?ed0234183b3476c7a7c1c18f5655bd73") format("woff"), url("./fonts/icon-font.woff2?ed0234183b3476c7a7c1c18f5655bd73") format("woff2"), url("./fonts/icon-font.eot?ed0234183b3476c7a7c1c18f5655bd73#iefix") format("embedded-opentype"), url("./fonts/icon-font.svg?ed0234183b3476c7a7c1c18f5655bd73#icon-font") format("svg");
@@ -3591,7 +3536,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #83be12;
+  color: #579189;
 }
 a[data-icon-left], a[data-icon-right] {
   text-decoration: none;
@@ -3704,7 +3649,7 @@ input[type=checkbox] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border: 1px solid #989898;
+  border: 1px solid #878787;
   height: 1.1em;
   width: 1.1em;
   margin-left: 0.2rem;
@@ -3718,11 +3663,11 @@ input[type=checkbox] {
   border-color: #fff;
 }
 input[type=checkbox]:hover, input[type=checkbox]:focus, input[type=checkbox]:checked {
-  border-color: #989898;
+  border-color: #878787;
 }
 input[type=checkbox]:checked {
-  background-color: #989898;
-  border: 1px solid #989898;
+  background-color: #878787;
+  border: 1px solid #878787;
   padding: 2px !important;
   background-clip: content-box;
 }
@@ -3800,12 +3745,12 @@ label, label * {
 }
 
 body {
-  font-family: "Hind", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  background: #83be12;
+  background: #fff;
 }
 
 img, video {
@@ -4052,7 +3997,7 @@ p:empty {
   }
 }
 .menu > li a:hover, .menu > li a.is-hover {
-  color: #83be12;
+  color: #579189;
 }
 .menu > li .sub-menu {
   list-style: none;
@@ -4123,7 +4068,7 @@ p:empty {
 }
 #navtoggle:hover, #navclose:hover {
   color: #fff;
-  background-color: #83be12;
+  background-color: #579189;
 }
 #navtoggle:before, #navclose:before {
   transform: translate(0em, -0.04em);
@@ -4243,5 +4188,5 @@ table.daten tr th {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Hind", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

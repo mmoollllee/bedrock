@@ -11285,9 +11285,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************!*\
   !*** ./src/scss/editor.scss ***!
   \******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n    ╷\n107 │ @import 'main/vendor/iframe-privacy';\n    │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ╵\n  src/scss/editor.scss 107:9  root stylesheet\n    at processResult (/Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/webpack/lib/NormalModule.js:758:19)\n    at /Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/webpack/lib/NormalModule.js:860:5\n    at /Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at Object.loader (/Users/mg/dev/zahnarztkorn.de/web/app/themes/template/node_modules/sass-loader/dist/index.js:69:5)\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at processImmediate (internal/timers.js:434:9)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -11444,7 +11447,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"main": 0,
 /******/ 			"builder-restrict": 0,
 /******/ 			"builder": 0,
-/******/ 			"backend": 0
+/******/ 			"backend": 0,
+/******/ 			"editor": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -11494,12 +11498,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./src/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./src/scss/main.scss")))
-/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./src/scss/editor.scss")))
-/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./src/scss/backend.scss")))
-/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./builder/scss/builder.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["main","builder-restrict","builder","backend"], () => (__webpack_require__("./builder/scss/builder-restrict.scss")))
+/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./src/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./src/scss/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./src/scss/editor.scss")))
+/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./src/scss/backend.scss")))
+/******/ 	__webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./builder/scss/builder.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["main","builder-restrict","builder","backend","editor"], () => (__webpack_require__("./builder/scss/builder-restrict.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

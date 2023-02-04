@@ -4,5 +4,6 @@
     "/main.css": "/main.css",
     "/builder-restrict.css": "/builder-restrict.css",
     "/builder.css": "/builder.css",
-    "/backend.css": "/backend.css"
+    "/backend.css": "/backend.css",
+    "/editor.css": "/editor.css"
 }
