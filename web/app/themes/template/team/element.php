@@ -6,7 +6,7 @@
       'order' => 'ASC',
    ]);
 ?>
-<div class="row">
+<div class="row col-l-8 justify-content-center team mb-4">
 <?php
    while ($loop->have_posts()):
       $loop->the_post();
@@ -14,23 +14,15 @@
       $bild = get_field('bild');
       $vita = get_field('vita');
 ?>
-   <div class="col-12 col-s-6 col-m-4 col-l item">
-      <figure class="thumbnail">
+   <div class="col-12 col-s-6 col-m-5 mb-3">
+      <figure class="portrait">
       <?php if (!empty($bild)): ?>
          <img loading="lazy" <?= acf_responsive_image($bild['ID'], 'medium') ?> />
       <?php endif; ?>
       </figure>
-      <span><?php the_title(); ?></span><br />
+      <span><?php the_title(); ?></span>
       <small class="d-block untertitel"><?php the_field('untertitel'); ?></small>
       
-      <?php if (!empty($vita)): ?>
-      <button data-fancybox data-src="#vita<?= $name ?>">Vita</button>
-      <div id="vita<?= $name ?>" style="display: none;">
-         <h2><?php the_title(); ?></h2>
-         <p class="untertitel"><?php the_field('untertitel'); ?></p>
-         <?php the_field('vita'); ?>
-      </div>
-      <?php endif; ?>
    </div>
 <?php
    endwhile;

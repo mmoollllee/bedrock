@@ -10,11 +10,13 @@
       transition: all .5s ease-in-out;
    }
 
-   .slideout-open & {
-      transform: translateX(-5%);
-   
-      & > * {
-         opacity: 0.5;
+      @include media-breakpoint-down(m) {
+      .slideout-open & {
+         transform: translateX(-5%);
+      
+         & > * {
+            opacity: 0.5;
+         }
       }
    }
 }
@@ -36,8 +38,10 @@
    background-color: $primary;
    padding: 2em;
 
+   @include media-breakpoint-down(m) {
    .slideout-open & {
       right: 0;
+   }
    }
 
    #navclose {
@@ -71,14 +75,13 @@
          @include make-col-ready();
          @include make-col(6);
          @include media-breakpoint-up(sm) {
-           @include make-col(4);
+         @include make-col(4);
          }
 
          a {
-            color: inherit;
 
             &:hover {
-               text-decoration: underline;
+               color: #000
             }
          }
 
@@ -96,12 +99,16 @@
          }
       }
 
-      &#menu-hauptmenue-1 {
+      &#menu-header-menu-1 {
          margin-bottom: 3em;
          li {
             a {
+               font-weight: 600;
+               text-transform: uppercase;
+               letter-spacing: .05em;
                font-size: 1.2em;
                font-weight: 600;
+               line-height: 2;
             }
          }
          

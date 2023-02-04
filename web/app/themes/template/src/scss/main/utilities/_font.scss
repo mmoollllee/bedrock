@@ -29,7 +29,19 @@
    font-size: 100% !important;
 }
 .font-110 {
-   font-size: 100% !important;
+   font-size: 110% !important;
+}
+.font-120 {
+   font-size: 120% !important;
+}
+.font-130 {
+   font-size: 130% !important;
+}
+.font-140 {
+   font-size: 140% !important;
+}
+.font-150 {
+   font-size: 150% !important;
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -67,6 +79,18 @@
       }
       .font#{$infix}-110 {
          font-size: 110% !important;
+      }
+      .font#{$infix}-120 {
+         font-size: 120% !important;
+      }
+      .font#{$infix}-130 {
+         font-size: 130% !important;
+      }
+      .font#{$infix}-140 {
+         font-size: 140% !important;
+      }
+      .font#{$infix}-150 {
+         font-size: 150% !important;
       }
    }
 }

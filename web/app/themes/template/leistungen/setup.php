@@ -2,12 +2,12 @@
 
 add_action('init', function () {
    $labels = [
-      'name' => __('Projekte', 'mg'),
-      'singular_name' => __('Projekt', 'mg'),
+      'name' => __('Leistungen', 'mg'),
+      'singular_name' => __('Leistung', 'mg'),
    ];
 
    $args = [
-      'label' => __('Projekte', 'mg'),
+      'label' => __('Leistungen', 'mg'),
       'labels' => $labels,
       'description' => '',
       'public' => true,
@@ -24,26 +24,12 @@ add_action('init', function () {
       'capability_type' => 'post',
       'map_meta_cap' => true,
       'hierarchical' => true,
-      'rewrite' => ['slug' => 'projekte', 'with_front' => true],
+      'rewrite' => ['slug' => 'leistungen', 'with_front' => true],
       'query_var' => true,
       'supports' => ['title', 'revisions'],
    ];
 
-   register_post_type('projekte', $args);
-
-   $labels = array(
-      'name' => __( 'Kategorien', 'mg' ),
-      'singular_name' => __( 'Kategorie', 'mg' ),
-   ); 
-
-   register_taxonomy('kategorie','projekte',array(
-      'labels' => $labels,
-      'hierarchical' => true,
-      'show_ui' => true,
-      'update_count_callback' => '_update_post_term_count',
-      'query_var' => true,
-      'rewrite' => array( 'slug' => 'kategorie' ),
-  ));
+   register_post_type('leistungen', $args);
 
 }, 5 );
 
@@ -51,10 +37,15 @@ add_action('init', function () {
  * Redirect Archive-Page
  */
 add_action( 'template_redirect', function() {
-   if( is_post_type_archive( 'projekte' ) ) {
-      wp_redirect( home_url( '/#projekte' ), 301 );
+   if( is_post_type_archive( 'leistungen' ) ) {
+      wp_redirect( home_url( '/#leistungen' ), 301 );
       exit();
    }
 });
 
 require_once 'acf.php';
+
+add_filter('acf/load_field/name=element_template', function ($field) {
+   $field['choices']['leistungen'] = 'Leistungen einblenden';
+   return $field;
+});

@@ -15,7 +15,13 @@
    }
 }
 
-.carousel__slide {
+.carousel-auto {
+   &, figure {
+      overflow: hidden;
+   }
+}
+
+.carousel__slide, .carousel-auto {
    --carousel-slide-width: 100%;
    padding:0
 }
@@ -38,4 +44,16 @@
 
 .carousel-free, .carousel {
    position: relative;
+}
+
+.carousel__viewport, .carousel__track, .carousel__slide {
+   &, img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
+
+   figure {
+      margin-bottom: 0;
+   }
 }

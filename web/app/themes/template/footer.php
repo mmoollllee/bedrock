@@ -1,26 +1,24 @@
 </main>
 
-	<footer id="footer" class="bg-red">
+	<footer id="footer">
 		<div class="container row text-center text-md-left align-items-center">
-			<div class="col-12 col-md-auto">
-				<a class="logo" href="<?php bloginfo('url'); ?>">
-					<img class="logo" src="<?php the_field(
-        'logo_klein',
-        'option'
-     ); ?>" alt="<?php bloginfo('name'); ?>" />
-				</a>
+			<div class="col-12 mt-n4 pt-1 position-relative">
+				<?php the_field('intro','option'); ?>
 			</div>
-			<div class="col-12 col-md-auto">
-				<?php the_field('kontaktdaten_1', 'option'); ?>
+			<div class="col-12 mt-2 font-150">
+			<?php 
+				$facebook = get_field('facebook', 'option');
+				$instagram = get_field('instagram', 'option');
+			?>
+				<a href="<?= $facebook['url']; ?>" title="<?= $facebook['title']; ?>" <?= $facebook['target'] ? 'target="'.$facebook['target'].'"' : ''; ?> class="icon-facebook-square"></a>
+				<a href="<?= $instagram['url']; ?>" title="<?= $instagram['title']; ?>" <?= $instagram['target'] ? 'target="'.$instagram['target'].'"' : ''; ?> class="icon-instagram-brands"></a>
 			</div>
-			<div class="col-12 col-md-auto">
-				<?php the_field('kontaktdaten_2', 'option'); ?>
-			</div>
+
 			<div class="col-12 col-md justify-self-end text-md-right">
 				<?php wp_nav_menu([
        'theme_location' => 'footer',
        'container' => false,
-       'menu_class' => '',
+       'menu_class' => 'p-2',
        'depth' => 0,
     ]); ?>
 			</div>
@@ -29,7 +27,10 @@
 
  </div><!--#wrapper-->
 
-<nav id="responsivemenu" class="bgblue">
+<nav id="responsivemenu">
+	<a href="<?php bloginfo('url'); ?>">
+		<img class="logo pb-2" width="60px" src="<?php the_field('logo', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
+	</a>
 	<?php wp_nav_menu([
     'theme_location' => 'top',
     'container' => false,

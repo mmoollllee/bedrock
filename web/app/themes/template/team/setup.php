@@ -37,3 +37,8 @@ add_action(
 );
 
 require_once 'acf.php';
+
+add_filter('acf/load_field/name=element_template', function ($field) {
+   $field['choices']['team'] = 'Team einblenden';
+   return $field;
+});

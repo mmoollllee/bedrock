@@ -37,21 +37,21 @@ function sort_parts($template, $content, $title = '') {
       ) {
          $return .= $content;
          $return .= $parts[1];
-         $close .= $parts[2];
+         $close .= $parts[2] . ' ';
       } elseif (
          $matches[0][0] == '<!--childs-->' &&
          $matches[0][1] == '<!--content-->'
       ) {
          $close .= $parts[1];
          $close .= $content;
-         $close .= $parts[2];
+         $close .= $parts[2] . ' ';
       }
    } elseif (isset($matches[0][0]) && $matches[0][0] == '<!--childs-->') {
-      $close .= $parts[1];
+      $close .= $parts[1] . ' ';
    } else {
       $return .= $content;
       if (isset($parts[1])) {
-         $close .= $parts[1];
+         $close .= $parts[1] . ' ';
       }
    }
 

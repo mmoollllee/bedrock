@@ -24,7 +24,6 @@
 
 [data-fancybox]:not([data-src]) {
    position: relative;
-   display: inline-block;
    &:after {
       @extend %icon-font-stuff;
       position: absolute;

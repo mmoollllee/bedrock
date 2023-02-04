@@ -1,17 +1,17 @@
 main > .container,
 main > * > .container {
    &, &.row {
-      margin-top: 1em;
-      margin-bottom: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
 
       @include media-breakpoint-up(m) {
-         margin-top: 2em;
-         margin-bottom: 2em;
+         padding-top: 2em;
+         padding-bottom: 2em;
       }
 
       @include media-breakpoint-up(l) {
-         margin-top: 2em;
-         margin-bottom: 3em;
+         padding-top: 2em;
+         padding-bottom: 3em;
       }
    }
 
@@ -24,34 +24,27 @@ main > * > .container {
    }
 
    &.wide {
-      margin-top:4em
+      padding-top:4em
    }
+}
+
+.bg-white {
+   background: #fff
 }
 
 main > section.container {
-   margin-bottom: 4em;
+   padding-bottom: 4em;
 
-   &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background-image: $primary-gradient;
-   }
-}
+   &:not(.bg-white) {
+      background-color: #191919;
+      color: #DCDCDC;
 
-.container:not(.bg-white) {
-   background-image: $gray-gradient;
-}
-
-.intro {
-   background: #fff !important;
-
-   @include media-breakpoint-up(xl) {
-      padding-top: 3em;
-      padding-bottom: 3em;
+      button[type="submit"] {
+         color: #fff;
+         &:hover {
+            color: $primary
+         }
+      }
    }
 }
 
@@ -117,6 +110,15 @@ main > section.container {
             opacity: .7;
             background: #000;
          }
+      }
+   }
+}
+
+.referenz {
+   a {
+      display: none;
+      &:first-of-type {
+         display: block
       }
    }
 }

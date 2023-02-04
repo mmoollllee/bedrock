@@ -9,10 +9,6 @@ $acfbuilder
       'label' => 'Bild',
       'wrapper' => ['width' => '25'],
    ])
-   ->addWysiwyg('vita', [
-      'label' => 'Vita',
-      'wrapper' => ['width' => '45'],
-   ])
    ->addTextarea('untertitel', [
       'label' => 'Untertitel',
       'wrapper' => ['width' => '30'],

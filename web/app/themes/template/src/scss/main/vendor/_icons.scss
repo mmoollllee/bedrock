@@ -41,13 +41,9 @@ content: attr(data-icon-right);
 content: attr(data-icon-left);
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
 @extend %icon-font-stuff;
 }
-
-// *:not(:empty)[class^="icon-"]:before, *:not(:empty)[class*=" icon-"]:before {
-//     padding-right: .5em
-// }
 
 $icon-font-map: (
     "address": "\f101",

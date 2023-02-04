@@ -51,6 +51,7 @@ function builder($args = false) {
             $content = get_sub_field('inhalt') ?: '';
             $title = get_sub_field('title') ?: '';
             $slug = (get_sub_field('slug') && !empty(get_sub_field('slug')) && get_sub_field('slug') != 'false' && get_sub_field('slug') != 'titel') ? get_sub_field('slug') : '';
+            $anchor = $slug ? '<div class="anchor" id="'.$slug.'"></div>' : '';
 	         $has_title = strpos($content, '<!--title-->') !== false;
             $container = ($hierarchie == 0) ? 'container' : '';
 

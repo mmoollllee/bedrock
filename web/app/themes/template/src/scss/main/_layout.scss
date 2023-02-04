@@ -10,29 +10,25 @@ body {
 img, video {
    max-width: 100%;
    height: auto;
+}
 
-   &.background {
-      position: absolute;
-      object-fit: cover;
-      object-position: center;
-      height: 100%;
-      width: 100%;
-      max-width: 100%;
-      z-index: -1;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-   }
+.background {
+   position: absolute;
+   object-fit: cover;
+   object-position: center;
+   height: 100%;
+   width: 100%;
+   max-width: 100% !important;
+   z-index: -1;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
 }
 
 main > * {
    background: #fff;
    text-align: center;
-}
-
-main .dark {
-   background: transparent;
 }
 
 .container,
@@ -55,4 +51,31 @@ main .dark {
 
 p:empty {
    display: none
+}
+
+.kompetenz {
+   outline: .5px solid #939393;
+   padding: 3em 1.5em 2em;
+   border: .5px solid #939393;
+
+   img {
+      margin: 0 0 1em;
+      max-height: 100px;
+   }
+}
+
+
+.portrait {
+   border-radius: 50%;
+   overflow: hidden;
+   height: 7em;
+   width: 7em;
+   display: block;
+   margin: 1em auto;
+
+   img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+   }
 }

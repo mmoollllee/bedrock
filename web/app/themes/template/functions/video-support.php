@@ -31,14 +31,14 @@ function video_or_image($args = false) {
    // Check if the image's-fields for video-files are set
    if ($mp4 && $webm) {
       $poster_src = wp_get_attachment_image_url( $args['id'], 'full' );
-      $output = '<video class="background" poster="' . $poster_src .'" playsinline muted autoplay loop>';
+      $output = '<video poster="' . $poster_src .'" playsinline muted autoplay loop>';
       $output .= '<source src="' . $mp4['url'] .'" type="video/mp4">';
       $output .= '<source src="' . $webm['url'] .'" type="video/webm">';
       $output .= '</video>';
 
       return $output;
    } else {
-      return '<img class="background" ' . acf_responsive_image($args['id'], $args['field']) . ' />';
+      return '<img ' . acf_responsive_image($args['id'], $args['field']) . ' />';
    }
 
 }

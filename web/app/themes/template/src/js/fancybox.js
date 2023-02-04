@@ -37,19 +37,16 @@ export default () => {
    Fancybox.bind('a[href*="vimeo.com/"]');
 
 
-   const SliderEls = document.querySelector(".carousel");
-   if (SliderEls) {
-      const Slider = new Carousel(SliderEls, {
+   const AutoSliderEls = document.querySelector(".carousel-auto");
+   if (AutoSliderEls) {
+      const AutoSlider = new Carousel(AutoSliderEls, {
          infinite: true,
          slidesPerPage: 1,
          center: false,
-         Navigation: {
-            prevTpl: '<i class="icon-arrow-left"></i>',
-            nextTpl: '<i class="icon-arrow-right"></i>',
-         },
+         Navigation: false,
          Dots: false,
          Autoplay: {
-            timeout: 2000,
+            timeout: 3000,
           },
       });
    }

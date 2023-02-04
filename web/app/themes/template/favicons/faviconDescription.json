@@ -4,8 +4,8 @@
 	"design": {
 		"ios": {
 			"pictureAspect": "backgroundAndMargin",
-			"backgroundColor": "#ffffff",
-			"margin": "21%",
+			"backgroundColor": "#579189",
+			"margin": "35%",
 			"assets": {
 				"ios6AndPriorIcons": false,
 				"ios7AndLaterIcons": false,
@@ -18,7 +18,7 @@
 		},
 		"windows": {
 			"pictureAspect": "noChange",
-			"backgroundColor": "#2d89ef",
+			"backgroundColor": "#579189",
 			"onConflict": "override",
 			"assets": {
 				"windows80Ie10Tile": false,
@@ -32,7 +32,7 @@
 		},
 		"androidChrome": {
 			"pictureAspect": "noChange",
-			"themeColor": "#ffffff",
+			"themeColor": "#579189",
 			"manifest": {
 				"display": "standalone",
 				"orientation": "notSet",
@@ -46,8 +46,8 @@
 		},
 		"safariPinnedTab": {
 			"pictureAspect": "blackAndWhite",
-			"threshold": 60.9375,
-			"themeColor": "#064888"
+			"threshold": 66.09375,
+			"themeColor": "#579189"
 		}
 	},
 	"settings": {

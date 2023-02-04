@@ -1,5 +1,6 @@
 <?php
-   $ids = get_sub_field('element');
+   $element_template = get_sub_field('element_template');
+   $ids = get_sub_field('relationship');
 
 	$layout = get_sub_field("layout");
 
@@ -21,10 +22,8 @@
    <?php endif; ?>
 
    <?php
-      if (in_array('projekte', $layout)):
-         require_once(get_template_directory() . '/projekte/element.php');
-      elseif (in_array('team', $layout)):
-         require_once(get_template_directory() . '/team/element.php');
+      if ($element_template):
+         require_once(get_template_directory() . '/'.$element_template.'/element.php');
       else: 
    ?>
    <?php

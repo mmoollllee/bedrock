@@ -8,8 +8,8 @@ if (
 ):
    acf_set_options_page_menu('optionen');
    acf_add_options_sub_page([
-      'page_title' => __('Optionen'),
-      'menu_title' => __('Optionen'),
+      'page_title' => __('Optionen', 'mg'),
+      'menu_title' => __('Optionen', 'mg'),
       'menu_slug' => 'optionen',
    ]);
 endif;
@@ -117,14 +117,14 @@ $acfbuilder
          'width' => '34',
       ],
    ])
-   ->addText('tel-nice', [
+   ->addText('telefon-nice', [
       'label' => 'Telefonnummer',
       'instructions' => 'Im gewünschten Ausgabeformat',
       'wrapper' => [
          'width' => '33',
       ],
    ])
-   ->addText('tel-href', [
+   ->addText('telefon-href', [
       'label' => 'Telefonnummer',
       'instructions' => 'Im Format <i>49-Vorwahl-Nummer</i>, ohne Leerzeichen,...',
       'wrapper' => [
@@ -160,6 +160,18 @@ $acfbuilder
          'width' => '33',
       ],
    ])
+   ->addLink('instagram', [
+      'label' => 'Instagram',
+      'wrapper' => [
+         'width' => '33',
+      ]
+   ])
+   ->addLink('facebook', [
+      'label' => 'Facebook',
+      'wrapper' => [
+         'width' => '33',
+      ]
+   ])
    ->addWysiwyg('oeffnungszeiten', [
       'label' => 'Öffnungszeiten',
       'instructions' => 'Mit allen künstlerischen Freiheiten',
@@ -169,6 +181,78 @@ $acfbuilder
          'width' => '33',
          'class' => 'textarea-small'
       ],
+   ])
+
+   ->setLocation('options_page', '==', 'optionen');
+
+add_action('acf/init', function () use ($acfbuilder) {
+   acf_add_local_field_group($acfbuilder->build());
+});
+
+
+/**
+ * Add Notification Banner Fields
+ */
+$acfbuilder = new Builder('notification-banner', [
+   'title' => 'Notification Banner',
+   'style' => 'default', // or 'seamless'
+   'position' => 'normal',
+]);
+$acfbuilder
+   ->addTrueFalse('notification-banner-active', [
+      'label' => 'Banner',
+      'message' => 'Banner anzeigen',
+      'wrapper' => ['width' => '80'],
+   ])
+   ->addSelect('notification-layout', [
+      'label' => 'Layout',
+      'required' => 0,
+      'wrapper' => ['width' => '20'],
+      'allow_null' => 1,
+      'multiple' => 1,
+      'ui' => 1,
+      'choices' => [
+         'bg-dark' => 'dunkler Hintergrund',
+      ],
+   ])
+   ->addImage('notification-banner-icon', [
+      'label' => 'Icon',
+      'wrapper' => [
+         'width' => '25',
+      ]
+   ])
+   ->addTextarea('notification-banner-text', [
+      'label' => 'Text',
+      'rows' => '2',
+      'new_lines' => 'br',
+      'wrapper' => [
+         'width' => '50',
+      ]
+   ])
+   ->addLink('notification-banner-url', [
+      'label' => 'Button',
+      'wrapper' => [
+         'width' => '25',
+      ]
+   ])
+
+   ->setLocation('options_page', '==', 'optionen');
+
+add_action('acf/init', function () use ($acfbuilder) {
+   acf_add_local_field_group($acfbuilder->build());
+});
+
+/**
+ * Footer-Area
+ */
+$acfbuilder = new Builder('footer', [
+   'title' => 'Fußbereich',
+   'style' => 'default', // or 'seamless'
+   'position' => 'normal',
+]);
+$acfbuilder
+   ->addWysiwyg('intro', [
+      'label' => 'Intro'
    ])
 
    ->setLocation('options_page', '==', 'optionen');

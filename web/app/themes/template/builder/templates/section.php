@@ -16,13 +16,15 @@
 
 <section class="<?php the_classes([$container, ...$layout_classes]); ?>">
 	<?php if (($content || $has_title) && empty($code['close'])): ?>
-	<div class="container intro">
+	<div class="container">
 		<div class="row">
-			<?php echo $slug ? '<div class="anchor" id="'.$slug.'"></div>' : ''; ?>
+			<?= $anchor ?>
+			<div>
 		<?php if ($has_title): ?>
 			<h2><!--title--></h2>
 		<?php endif; ?>
 			<!--content-->
+			</div>
 		</div>
 	</div>
 	<div class="row">
@@ -32,11 +34,11 @@
 		elseif (isset($code['close']) && !empty($code['close'])):
 			echo $code['return'];
 	?>
-			<?php echo $slug ? '<div class="anchor" id="'.$slug.'"></div>' : ''; ?>
-			<!--content-->
+			<?= $anchor ?>
+			<!--childs-->
 		<?= $code['close'] ?>
 	<?php else: ?>
-		<?php echo $slug ? '<div class="anchor" id="'.$slug.'"></div>' : ''; ?>
+		<?= $anchor ?>
 		<!--childs-->
 	<?php endif; ?>
 </section>
