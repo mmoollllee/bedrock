@@ -68,10 +68,6 @@ $meta = !empty(get_field('meta_keywords'))
 
    <?php endif; ?>
 
-   <header id="top_logo">
-      <img class="logo-l pb-2" width="60px" src="<?php the_field('logo', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
-   </header>
-
 	<nav class="container pt-2">
   		<div class="row justify-content-end align-items-center">
 
@@ -87,43 +83,11 @@ $meta = !empty(get_field('meta_keywords'))
   		</div>
 	</nav>
 
-   <?php 
-      $header_ids = get_field('header') ?: [54];
-   ?>
-   <?php if ($header_ids) : ?>
-      <header>
-      <?php
-         foreach ($header_ids as $id) :
-            $gallery = get_field('background', $id) ?: [];
-            $overlay = get_field('overlay', $id) ? 'overlay-'.get_field('overlay', $id) : '';
-            $size = get_field('size', $id);
-            $caption = get_field('caption', $id);
-            $link = get_field('link', $id);
-      ?>
-         <div class="item container header-<?= $size ?> <?= $overlay ?>">
-            <div class="background carousel-auto">
-            <?php foreach ($gallery as $img): ?>
-               <figure class="carousel__slide">
-               <?php echo video_or_image(['id' => $img['ID'], 'field' => 'background']); ?>
-               </figure>
-            <?php endforeach; ?>
-            </div>
-            <div class="inner color-white">
-               <?= the_field('inhalt', $id); ?>
-               <?php if ($caption): ?>
-               <span class="caption"><?= $caption ?></span>
-               <?php endif; ?>
-               <?php if ($link): ?>
-               <a href="<?= $link['url'] ?>" title="<?= $link['title'] ?>" class="button"><?= $link['title'] ?></a>
-               <?php endif; ?>
-            </div>
-         </div>
-
-      <?php
-         endforeach;
-      ?>
-      </header>
-   <?php endif; ?>
+   <header class="container" id="top-logo">
+      <a class="d-block" href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
+         <img class="logo-l pb-2 ps-2" src="<?php the_field('logo', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
+      </a>
+   </header>
 
 	<main id="content">
 		<div id="main" class="anchor"></div>

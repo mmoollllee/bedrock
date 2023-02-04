@@ -16,15 +16,13 @@
 
 <section class="<?php the_classes([$container, ...$layout_classes]); ?>">
 	<?php if (($content || $has_title) && empty($code['close'])): ?>
-	<div class="container">
-		<div class="row">
-			<?= $anchor ?>
-			<div>
+	<div class="row">
+		<div class="section-content">
+		<?= $anchor ?>
 		<?php if ($has_title): ?>
 			<h2><!--title--></h2>
 		<?php endif; ?>
 			<!--content-->
-			</div>
 		</div>
 	</div>
 	<div class="row">

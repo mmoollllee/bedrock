@@ -32,3 +32,16 @@
       margin-right: .3em;
    }
 }
+
+a[href^="tel:"]{
+   text-decoration: none !important;
+   margin-left: .5em;
+   padding-right: .5em;
+   &:before {
+      @extend %icon-font-stuff;
+      content: map-get($icon-font-map, "phone");
+      margin-left: .5em;
+      margin-right: 1em;
+   }
+
+}

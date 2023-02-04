@@ -49,11 +49,11 @@
 
 .carousel__button {
    &, * {
-      color: #fff;
+      color: $primary;
    }
    &:hover {
       &, * {
-         color: $primary;
+         color: #fff;
       }
    }
    &:after {

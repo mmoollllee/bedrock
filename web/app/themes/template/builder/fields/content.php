@@ -18,10 +18,9 @@ $content
       'ui' => 1,
       'choices' => [
          'has-title' => 'mit Titel',
-         'bg-gray' => 'grauer Hintergrund',
-         'top-padding' => 'Abstand nach oben',
-         'bottom-padding' => 'Abstand nach unten',
-         'text-start' => 'Text links ausrichten'
+         'bubble-white' => 'Bubblebox',
+         'top-padding' => 'mehr Abstand nach oben',
+         'bottom-padding' => 'mehr Abstand nach unten',
       ],
    ])
    ->addFields($code);

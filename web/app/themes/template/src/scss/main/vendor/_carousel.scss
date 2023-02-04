@@ -1,15 +1,13 @@
 
 .slider {
-   height: 33vw;
-   min-height: 40vh;
-   max-height: 66vh;
-   overflow: hidden;
-
-   img {
+   &, img {
       height: 33vw;
-      min-height: 40vh;
+      min-height: 30vh;
       max-height: 66vh;
+      overflow: hidden;
+      object-fit: cover;
    }
+
 }
 
 .carousel-auto {
@@ -20,9 +18,8 @@
 
 .carousel__slide {
    --carousel-slide-width: auto;
-   margin-left: .5em;
    padding:0;
-   margin-right: .5em;
+   margin-right: 1em;
 
    img {
       width: auto;

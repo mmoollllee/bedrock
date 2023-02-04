@@ -6,10 +6,8 @@
    overflow: visible;
    color: #fff;
    background: none;
-
-   & + header {
-      margin-top: -4em;
-   }
+   height: 0;
+   transform: translateY(2vw);
 
    .row {
       position: relative;

@@ -1,10 +1,10 @@
 @font-face {
 font-family: "icon-font";
-src: url("./fonts/icon-font.ttf?ed0234183b3476c7a7c1c18f5655bd73") format("truetype"),
-url("./fonts/icon-font.woff?ed0234183b3476c7a7c1c18f5655bd73") format("woff"),
-url("./fonts/icon-font.woff2?ed0234183b3476c7a7c1c18f5655bd73") format("woff2"),
-url("./fonts/icon-font.eot?ed0234183b3476c7a7c1c18f5655bd73#iefix") format("embedded-opentype"),
-url("./fonts/icon-font.svg?ed0234183b3476c7a7c1c18f5655bd73#icon-font") format("svg");
+src: url("./fonts/icon-font.ttf?138335c5879ccb9fdb53195560d152e6") format("truetype"),
+url("./fonts/icon-font.woff?138335c5879ccb9fdb53195560d152e6") format("woff"),
+url("./fonts/icon-font.woff2?138335c5879ccb9fdb53195560d152e6") format("woff2"),
+url("./fonts/icon-font.eot?138335c5879ccb9fdb53195560d152e6#iefix") format("embedded-opentype"),
+url("./fonts/icon-font.svg?138335c5879ccb9fdb53195560d152e6#icon-font") format("svg");
 font-display: swap;
 }
 
@@ -67,14 +67,15 @@ $icon-font-map: (
     "facebook-square": "\f113",
     "fax": "\f114",
     "instagram-brands": "\f115",
-    "map": "\f116",
-    "maximize": "\f117",
-    "phone-alt": "\f118",
-    "phone": "\f119",
-    "sliders-h": "\f11a",
-    "times": "\f11b",
-    "tools": "\f11c",
-    "traffic-cone": "\f11d",
+    "location-dot": "\f116",
+    "map": "\f117",
+    "maximize": "\f118",
+    "phone-alt": "\f119",
+    "phone": "\f11a",
+    "sliders-h": "\f11b",
+    "times": "\f11c",
+    "tools": "\f11d",
+    "traffic-cone": "\f11e",
 );
 
 .icon-address:before {
@@ -139,6 +140,9 @@ $icon-font-map: (
 }
 .icon-instagram-brands:before {
     content: map-get($icon-font-map, "instagram-brands");
+}
+.icon-location-dot:before {
+    content: map-get($icon-font-map, "location-dot");
 }
 .icon-map:before {
     content: map-get($icon-font-map, "map");

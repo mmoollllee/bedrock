@@ -23,9 +23,13 @@
 	} else {
 ?>
 	<div class="<?php the_classes(['content', $container, ...$layout_classes]); ?>">
-		<?php echo $slug ? '<div class="anchor" id="'.$slug.'"></div>' : ''; ?>
+		<?= $anchor ?>
 		<?php if (in_array('has-title', $layout) && !$has_title && $title): ?>
-			<h3><!--title--></h3>
+			<?php if ($hierarchie == 0) { ?>
+				<h2><!--title--></h2>
+			<?php } else { ?>
+				<h3><!--title--></h3>
+			<?php } ?>
 		<?php endif; ?>
 		<!--content-->
 	</div>

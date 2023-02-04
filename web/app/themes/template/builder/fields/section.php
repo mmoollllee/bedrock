@@ -17,7 +17,7 @@ $section
       'multiple' => 1,
       'ui' => 1,
       'choices' => [
-         'text-center' => 'Alles zentrieren',
+         'text-center' => 'Inhalt zentrieren',
          'has-title' => 'mit Titel',
          'bg-white' => 'weißer Hintergrund',
       ],

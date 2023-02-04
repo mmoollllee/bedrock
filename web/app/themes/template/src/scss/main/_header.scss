@@ -1,86 +1,14 @@
-#wrapper > header .container {
-   background: none;
-}
+#top-logo {
+   .logo-l {
+      width: 60%;
+      max-width: 360px;
 
-#wrapper > header {
-   text-align: center;
-   width: 100%;
-   overflow: hidden;
-   color: #fff;
-
-   .inner {
-      position: relative;
-      z-index: 2;
-      padding: 7em 0 5em;
-
-      .logo {
-         height: 40vh;
-         margin-bottom: 2em;
-         max-height: 250px;
+      @include media-breakpoint-up(sm) {
+         width: 50%;
       }
-   }
 
-   .header-s {
-      .inner {
-         padding-top: 5em;
-         padding-bottom: 2em;
-   
-         .logo {
-            height: 20vh;
-            margin-bottom: 1em;
-            max-height: 100px;
-         }
+      @include media-breakpoint-up(m) {
+         width: 40%;
       }
-   }
-}
-
-.overlay-25 {
-   .background img {
-      filter: brightness(50%);
-      animation-name: fade-bg;
-      animation-delay: 0;
-      animation-iteration-count: infinite;
-      animation-direction: forward;
-      animation-timing-function: ease-in-out;
-      animation-duration: 20s;
-      transform-origin: center;
-   }
-
-
-   &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
-   }
-}
-
-@keyframes fade-bg {
-   0% {
-      filter: brightness(90%);
-      transform: scale(1) translate(0%, 0%)
-   }
-
-   25% {
-      filter: brightness(60%);
-      transform: scale(1.05) translate(1%, .5%)
-   }
-
-   50% {
-      filter: brightness(100%);
-      transform: scale(1.1) translate(1%, 1%)
-   }
-
-   75% {
-      filter: brightness(65%);
-      transform: scale(1.05) translate(-.5%, 1%)
-   }
-
-   100% {
-      filter: brightness(90%);
-      transform: scale(1) translate(0%, 0%)
    }
 }
