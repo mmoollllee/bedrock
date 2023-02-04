@@ -21,6 +21,7 @@ web/wp
 .env
 .env.*
 !.env.example
+auth.json
 
 # Composer
 /vendor
