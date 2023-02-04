@@ -19,6 +19,7 @@
       "lint:js": "eslint resources/scripts",
       "lint:css": "stylelint \"resources/**/*.{css,scss,vue}\"",
       "icons": "fantasticon -c src/icons/.fantasticonrc.js",
+      "favicon": "real-favicon generate favicons/faviconDescription.json favicons/faviconData.json favicons/"
    },
    "devDependencies": {
       "@wordpress/babel-preset-default": "^6.13.0",
@@ -27,6 +28,7 @@
       "babel-eslint": "^10.1.0",
       "browser-sync": "^2.27.10",
       "browser-sync-webpack-plugin": "^2.3.0",
+      "cli-real-favicon": "0.0.8",
       "eslint": "^8.18.0",
       "eslint-plugin-import": "^2.26.0",
       "fantasticon": "*",
@@ -40,6 +42,7 @@
    "dependencies": {
       "@fancyapps/ui": "*",
       "bootstrap": "*",
+      "consent-control": "^1.0.1",
       "entypo": "*",
       "jquery": "*",
       "jquery-on-screen": "*"

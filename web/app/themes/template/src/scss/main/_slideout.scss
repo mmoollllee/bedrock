@@ -2,7 +2,7 @@
 #wrapper {
    position: relative;
    z-index: 1;
-   background-color: #fff;
+   background-color: $primary;
    transition: all .5s ease-in-out;
 
    & > * {

@@ -92,6 +92,8 @@ $enable-deprecation-messages: false;
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
+@import "~consent-control/dist/consentcontrol.main.css";
+@import "~consent-control/dist/consentmessage.main.css";
 
 @import 'main/mixins/position';
 @import 'main/mixins/appearance';
@@ -107,8 +109,6 @@ $enable-deprecation-messages: false;
 @import 'main/utilities/position';
 @import 'main/utilities/toggle';
 
-
-@import 'main/vendor/iframe-privacy';
 @import 'main/vendor/icons';
 @import 'main/vendor/breadcrumb';
 

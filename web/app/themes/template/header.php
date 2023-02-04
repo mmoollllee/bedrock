@@ -68,6 +68,10 @@ $meta = !empty(get_field('meta_keywords'))
 
    <?php endif; ?>
 
+   <header id="top_logo">
+      <img class="logo-l pb-2" width="60px" src="<?php the_field('logo', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
+   </header>
+
 	<nav class="container pt-2">
   		<div class="row justify-content-end align-items-center">
 

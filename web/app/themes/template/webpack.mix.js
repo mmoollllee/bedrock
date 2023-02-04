@@ -3,7 +3,7 @@ const mix = require('laravel-mix');
 
 mix
   .setPublicPath('./public')
-  .browserSync('example.com/');
+  .browserSync('zahnarztkorn.test/');
 
 mix
   .sass('src/scss/main.scss', '.')
