@@ -26,18 +26,13 @@ img, video {
    bottom: 0;
 }
 
-main > * {
-   background: #fff;
-   text-align: center;
-}
-
 .container,
 .container-fluid {
    max-width: 100%;
    position: relative;
    padding: 0;
 
-   & > *:not(.container):not(.element) {
+   &:not(.fullwidth) > *:not(.container):not(.element) {
       max-width: map-get($container-max-widths, "xl");
       margin: auto;
       padding-left: 0;

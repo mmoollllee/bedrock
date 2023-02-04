@@ -115,18 +115,20 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel.Plugins.Autoplay = _fancyapp
   });
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('a[href*="youtube.com/watch?v"]');
   _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('a[href*="vimeo.com/"]');
-  var AutoSliderEls = document.querySelector(".carousel-auto");
+  var AutoSliderEls = document.querySelector(".carousel");
+  var AutoSlider;
 
   if (AutoSliderEls) {
-    var AutoSlider = new _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel(AutoSliderEls, {
+    AutoSlider = new _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel(AutoSliderEls, {
       infinite: true,
-      slidesPerPage: 1,
       center: false,
-      Navigation: false,
+      dragFree: true,
+      Navigation: {
+        prevTpl: '<i class="icon-arrow-left"></i>',
+        nextTpl: '<i class="icon-arrow-right"></i>'
+      },
       Dots: false,
-      Autoplay: {
-        timeout: 3000
-      }
+      Autoplay: false
     });
   }
 
@@ -151,8 +153,8 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel.Plugins.Autoplay = _fancyapp
   }
 
   var refreshSlider = setInterval(function () {
-    if (SliderFree) {
-      SliderFree.updatePage();
+    if (AutoSlider) {
+      AutoSlider.updatePage();
       console.log('slider refresehd');
       clearInterval(refreshSlider);
     }
@@ -160,7 +162,7 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel.Plugins.Autoplay = _fancyapp
 
   document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
-      SliderFree.updatePage();
+      AutoSlider.updatePage();
       clearInterval(refreshSlider);
     }
   };

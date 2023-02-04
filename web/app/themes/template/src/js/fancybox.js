@@ -37,17 +37,19 @@ export default () => {
    Fancybox.bind('a[href*="vimeo.com/"]');
 
 
-   const AutoSliderEls = document.querySelector(".carousel-auto");
+   const AutoSliderEls = document.querySelector(".carousel");
+   var AutoSlider
    if (AutoSliderEls) {
-      const AutoSlider = new Carousel(AutoSliderEls, {
+      AutoSlider = new Carousel(AutoSliderEls, {
          infinite: true,
-         slidesPerPage: 1,
          center: false,
-         Navigation: false,
+         dragFree: true,
+         Navigation: {
+            prevTpl: '<i class="icon-arrow-left"></i>',
+            nextTpl: '<i class="icon-arrow-right"></i>',
+         },
          Dots: false,
-         Autoplay: {
-            timeout: 3000,
-          },
+         Autoplay: false,
       });
    }
 
@@ -71,8 +73,8 @@ export default () => {
    }
 
    const refreshSlider = setInterval(() => {
-      if(SliderFree) {
-         SliderFree.updatePage();
+      if(AutoSlider) {
+         AutoSlider.updatePage();
          console.log('slider refresehd')
          clearInterval(refreshSlider);
       }
@@ -80,7 +82,7 @@ export default () => {
 
    document.onreadystatechange = () => {
       if (document.readyState === 'complete') {
-         SliderFree.updatePage();
+         AutoSlider.updatePage();
          clearInterval(refreshSlider);
       }
    };

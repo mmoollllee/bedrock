@@ -155,7 +155,7 @@ nav .logo img {
 }
 
 
-#menu-header-menu {
+#menu-hauptmenue {
    background: #fff;
    color: #000;
    height: 2.4em;
@@ -178,7 +178,7 @@ nav .logo img {
 
 @include media-breakpoint-up(m) {
    .slideout-open {
-      #menu-header-menu {
+      #menu-hauptmenue {
          max-width: 100%;
          box-shadow: 0 5px 30px 5px rgba(0,0,0,0.2);
       }

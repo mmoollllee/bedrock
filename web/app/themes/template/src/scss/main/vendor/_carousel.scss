@@ -9,9 +9,6 @@
       height: 33vw;
       min-height: 40vh;
       max-height: 66vh;
-      width: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
    }
 }
 
@@ -21,24 +18,14 @@
    }
 }
 
-.carousel__slide, .carousel-auto {
-   --carousel-slide-width: 100%;
-   padding:0
-}
+.carousel__slide {
+   --carousel-slide-width: auto;
+   margin-left: .5em;
+   padding:0;
+   margin-right: .5em;
 
-.carousel-free {
-   .carousel__slide {
-      --carousel-slide-width: auto;
-      margin-left: .5em;
-      margin-right: .5em;
-      opacity: .5;
-      &.is-selected {
-         opacity: 1;
-      }
-
-      img {
-         width: auto;
-      }
+   img {
+      width: auto;
    }
 }
 
@@ -46,14 +33,16 @@
    position: relative;
 }
 
-.carousel__viewport, .carousel__track, .carousel__slide {
-   &, img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-   }
+.carousel-cover {
+   .carousel__viewport, .carousel__track, .carousel__slide {
+      &, img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+      }
 
-   figure {
-      margin-bottom: 0;
+      figure {
+         margin-bottom: 0;
+      }
    }
 }

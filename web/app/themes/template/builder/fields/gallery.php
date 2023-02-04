@@ -17,6 +17,7 @@ $gallery
          'has-title' => 'mit Titel',
          'has-links' => 'Bilder klickbar',
          'slider' => 'Slider',
+         'fullwidth' => 'Volle Breite'
       ],
    ])
    ->addFields($code);

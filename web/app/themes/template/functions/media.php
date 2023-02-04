@@ -6,7 +6,7 @@
 
 //add_image_size( 'custom-image', 2000, 1200, true );
 //add_image_size( 'portrait', 300, 300, array( 'center', 'center' ) );
-add_image_size('slider', 960, 300, ['top', 'center']);
+add_image_size('slider', 960, 640, ['top', 'center']);
 add_image_size('background', 2500, 1800);
 
 #add_theme_support( 'post-thumbnails' );
