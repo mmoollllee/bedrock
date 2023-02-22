@@ -2,12 +2,12 @@
 
 add_action('init', function () {
    $labels = [
-      'name' => __('Leistungen', 'mg'),
-      'singular_name' => __('Leistung', 'mg'),
+      'name' => __('Artikel', 'mg'),
+      'singular_name' => __('Artikel', 'mg'),
    ];
 
    $args = [
-      'label' => __('Leistungen', 'mg'),
+      'label' => __('Artikel', 'mg'),
       'labels' => $labels,
       'description' => '',
       'public' => true,
@@ -24,28 +24,27 @@ add_action('init', function () {
       'capability_type' => 'post',
       'map_meta_cap' => true,
       'hierarchical' => true,
-      'rewrite' => ['slug' => 'leistungen', 'with_front' => true],
+      'rewrite' => ['slug' => 'artikel', 'with_front' => true],
       'query_var' => true,
       'supports' => ['title', 'revisions'],
    ];
 
-   register_post_type('leistungen', $args);
+   register_post_type('artikel', $args);
+
+   $labels = array(
+      'name' => __( 'Artikeltypen', 'mg' ),
+      'singular_name' => __( 'Artikeltyp', 'mg' ),
+   ); 
+
+   register_taxonomy('typ','artikel',array(
+      'labels' => $labels,
+      'hierarchical' => true,
+      'show_ui' => true,
+      'update_count_callback' => '_update_post_term_count',
+      'query_var' => true,
+      'rewrite' => array( 'slug' => 'type' ),
+  ));
 
 }, 5 );
 
-/**
- * Redirect Archive-Page
- */
-add_action( 'template_redirect', function() {
-   if( is_post_type_archive( 'leistungen' ) ) {
-      wp_redirect( home_url( '/#leistungen' ), 301 );
-      exit();
-   }
-});
-
-require_once 'acf.php';
-
-add_filter('acf/load_field/name=element_template', function ($field) {
-   $field['choices']['leistungen'] = 'Leistungen einblenden';
-   return $field;
-});
+// require_once 'acf.php';

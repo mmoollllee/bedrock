@@ -16,7 +16,7 @@ function autoload($path) {
 autoload(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'functions');
 
 // Setup Post-Types
-require_once 'leistungen/setup.php';
+require_once 'produkte/setup.php';
 require_once 'team/setup.php';
 
 // Enqueue Scripts & CSS

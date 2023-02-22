@@ -18,7 +18,7 @@ $acfbuilder
       'wrapper' => ['width' => '33'],
    ])
 
-   ->setLocation('post_type', '==', 'leistungen');
+   ->setLocation('post_type', '==', 'artikel');
    
 add_action('acf/init', function () use ($acfbuilder) {
    acf_add_local_field_group($acfbuilder->build());
