@@ -3,7 +3,7 @@
 	<footer id="footer">
 		<div class="container row text-center text-md-left align-items-center">
 			<div class="col-12 position-relative">
-				<a href="<?php bloginfo('url'); ?>">
+				<a href="/#wrapper">
 					<img class="logo-s pt-3" width="310px" src="<?php the_field('logo_mini', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
 				</a>
 				<?php the_field('intro','option'); ?>
@@ -37,9 +37,7 @@
  </div><!--#wrapper-->
 
 <nav id="responsivemenu">
-	<a href="<?php bloginfo('url'); ?>">
-		<img class="logo-m pb-2" width="200px" src="<?php the_field('logo_klein', 'option' ); ?>" alt="<?php bloginfo('name'); ?>" />
-	</a>
+	<button id="navclose" class="close icon-times"></button>
 	<?php wp_nav_menu([
     'theme_location' => 'top',
     'container' => false,

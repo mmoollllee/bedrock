@@ -53,29 +53,9 @@ export default () => {
       });
    }
 
-   const SliderFreeEls = document.querySelector(".carousel-free");
-   var SliderFree;
-   if (SliderFreeEls) {
-      SliderFree = new Carousel(SliderFreeEls, {
-         infinite: true,
-         center: true,
-         Navigation: {
-            prevTpl: '<i class="icon-arrow-left"></i>',
-            nextTpl: '<i class="icon-arrow-right"></i>',
-         },
-         Dots: false,
-         dragFree: false,
-         Autoplay: false
-         // Autoplay: {
-         //    timeout: 4000,
-         //  },
-      });
-   }
-
    const refreshSlider = setInterval(() => {
       if(AutoSlider) {
          AutoSlider.updatePage();
-         console.log('slider refresehd')
          clearInterval(refreshSlider);
       }
    }, 1000);

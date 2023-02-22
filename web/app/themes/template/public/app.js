@@ -145,30 +145,9 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel.Plugins.Autoplay = _fancyapp
     });
   }
 
-  var SliderFreeEls = document.querySelector(".carousel-free");
-  var SliderFree;
-
-  if (SliderFreeEls) {
-    SliderFree = new _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Carousel(SliderFreeEls, {
-      infinite: true,
-      center: true,
-      Navigation: {
-        prevTpl: '<i class="icon-arrow-left"></i>',
-        nextTpl: '<i class="icon-arrow-right"></i>'
-      },
-      Dots: false,
-      dragFree: false,
-      Autoplay: false // Autoplay: {
-      //    timeout: 4000,
-      //  },
-
-    });
-  }
-
   var refreshSlider = setInterval(function () {
     if (AutoSlider) {
       AutoSlider.updatePage();
-      console.log('slider refresehd');
       clearInterval(refreshSlider);
     }
   }, 1000);

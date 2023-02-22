@@ -1,63 +1,36 @@
 <?php
 
+/**
+ * - Deploy with `php vendor/bin/dep deploy stage`
+ * - Set Webspace Path to 'current/web'
+ */
+
 namespace Deployer;
 
-require 'vendor/deployer/deployer/recipe/common.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/prepare.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/bedrock_db.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/bedrock_env.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/bedrock_misc.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/common.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/filetransfer.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/sage.php';
-require 'vendor/mmoollllee/bedrock-deployer/recipe/trellis.php';
+// Configurate Hostname of stage & production
+$hostname = 'moritz-graf.de';
+$stage_hostname = $hostname;
 
-// Configuration
-set('bin/composer', function () { return 'composer'; });
-// set('bin/composer', function () { return '/usr/bin/php7.3-cli ~/composer.phar'; });
+// get directory of projects. Will be used for domain name,...
+set( 'local_root', dirname( __FILE__ ) );
 
-// Common Deployer config
-set( 'repository', 'git@github.com:vendor/example.com.git' );
-set( 'shared_dirs', [
-	'web/app/uploads'
-] );
+require 'vendor/mmoollllee/bedrock-deployer/config/config.php';
 
-// Bedrock DB config
-set( 'vagrant_dir', dirname( __FILE__ ) . '/../trellis' );
-set( 'vagrant_root', '/srv/www/example.com/current' );
+// set 
+host( 'stage' )
+	->setHostname( $stage_hostname )
+	->set('remote_user', function () { return getenv('STAGE_USERNAME') ?: getenv('USERNAME'); })
+	->set('deploy_path', function () { return getenv('STAGE_DIR'); });
 
-// Bedrock DB and Sage config
-set( 'local_root', dirname( __FILE__ ) );;
-set( 'theme_path', 'web/app/themes/template' );
-
-// File transfer config
-set( 'sync_dirs', [
-	dirname( __FILE__ ) . '/web/app/uploads/' => '{{deploy_path}}/shared/web/app/uploads/',
-] );
-
-
-// Hosts
-
-set( 'default_stage', 'staging' );
-
-host( 'stage.your-host.com' )
-	->stage( 'staging' )
-	->user( 'your-username' )
-	->set( 'deploy_path', '~/stage/deploy' );
-// Set Webspace-Path to stage.example.com/deploy/current/web/
-
-host( 'your-host.com' )
-	->stage( 'production' )
-	->user( 'your-username' )
-	->set( 'deploy_path', '~/httpdocs/deploy' );
-
+host( 'prod' )
+	->setHostname( $hostname )
+	->set('remote_user', function () { return getenv('USERNAME'); })
+	->set('deploy_path', function () { return getenv('DIR'); });
 
 // Tasks
-
-// Deployment flow
-// ToDo adapt sage:vendors...
 desc( 'Deploy whole project' );
 task( 'deploy', [
+	'deployer:check',
 	'bedrock:prepare',
 	'deploy:lock',
 	'deploy:release',
@@ -67,17 +40,19 @@ task( 'deploy', [
 	'deploy:writable',
 	'deploy:symlink',
 	'bedrock:env',
+	'bedrock:acf',
 	'bedrock:vendors',
 	'deploy:clear_paths',
 	'push:db',
 	'push:files-no-bak',
 	'deploy:unlock',
-	'cleanup',
-	'success',
+	'deploy:cleanup',
+	'deploy:success',
 ] );
 
 desc( 'Deploy only app' );
-task( 'push', [
+task( 'update', [
+	'deployer:check',
 	'bedrock:prepare',
 	'deploy:lock',
 	'deploy:release',
@@ -86,17 +61,18 @@ task( 'push', [
 	'deploy:shared',
 	'deploy:writable',
 	'bedrock:env',
+	'bedrock:acf',
 	'bedrock:vendors',
 	'deploy:clear_paths',
 	'deploy:symlink',
 	'deploy:unlock',
-	'cleanup',
-	'success',
+	'deploy:cleanup',
+	'deploy:success',
 ] );
 
 task( 'pull', [
 	'pull:db',
-	'pull:files-no-bak',
+	'pull:files',
 ] );
 
 // [Optional] if deploy fails automatically unlock.

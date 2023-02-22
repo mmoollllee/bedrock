@@ -10,7 +10,7 @@
 		$layout_classes[] = array_key_exists($value, $layout_map) ? $layout_map[$value] : $value;
 	}
 
-	$code = sort_parts(get_sub_field('code'), $content, $title);
+	$code = sort_parts(get_sub_field('code'), $content, $title, $anchor);
 ?>
 
 <?php 

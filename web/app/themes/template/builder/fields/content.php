@@ -18,7 +18,6 @@ $content
       'ui' => 1,
       'choices' => [
          'has-title' => 'mit Titel',
-         'bubble-white' => 'Bubblebox',
          'top-padding' => 'mehr Abstand nach oben',
          'bottom-padding' => 'mehr Abstand nach unten',
       ],

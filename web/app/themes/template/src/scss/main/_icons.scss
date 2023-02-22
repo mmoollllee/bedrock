@@ -1,5 +1,6 @@
 a[href^="tel:"],
 a[href^="mailto:"] {
+  display: inline-block !important;
    text-decoration: none !important;
    margin-left: .5em;
    padding-right: .5em;
@@ -58,13 +59,8 @@ a[href^="mailto:"]:before {
 [class*=" icon-"]:before,
 [data-icon-left]:before,
 [data-icon-right]:after {
-  // margin-top: .1em;
   left: -.3em;
   line-height: 1;
-}
-
-.icon-close:before {
-  font-size: .9em;
 }
 
 .button.icon-close:before,

@@ -2,10 +2,15 @@
    background: #fff;
    color: $gray;
 
+   .container {
+      padding: 0 1em 1em;
+   }
+
    svg {
-      max-width: 70px;
+      height: 1.5em;
+      width: 1.5em;
       * {
-         fill: $gray;
+         fill: $primary;
       }
    }
 
@@ -20,7 +25,12 @@
       }
    }
 
-   p {
+   figure, p {
       line-height: 1.1;
+      margin-bottom: 0;
+
+      a {
+         display: inline
+      }
    }
 }

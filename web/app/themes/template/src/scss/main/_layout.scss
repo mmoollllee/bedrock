@@ -14,46 +14,11 @@ img, video {
 
 .container,
 .container-fluid {
-   max-width: 100%;
    position: relative;
    padding: 0;
-
-   // &:not(.fullwidth) > *:not(.container):not(.element) {
-   //    max-width: map-get($container-max-widths, "xl");
-   //    margin: auto;
-   //    padding-left: 0;
-   //    padding-right: 0;
-
-   //    &.wide {
-   //       max-width: map-get($container-max-widths, "xxl");
-   //    }
-   // }
+   padding-bottom: 2em;
 }
 
 p:empty {
    display: none
-}
-
-main {
-   color: #fff;
-}
-
-.content,
-.section-content {
-   padding: 2em
-}
-
-.portrait {
-   border-radius: 50%;
-   overflow: hidden;
-   height: 7em;
-   width: 7em;
-   display: block;
-   margin: 1em auto;
-
-   img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-   }
 }

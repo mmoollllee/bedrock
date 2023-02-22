@@ -15,7 +15,8 @@
 ?>
 
 <section class="<?php the_classes([$container, ...$layout_classes]); ?>">
-	<?php if (($content || $has_title) && empty($code['close'])): ?>
+	<?php if (empty($code['close'])): ?>
+	<?php if ($content || $has_title): ?>
 	<div class="row">
 		<div class="section-content">
 		<?= $anchor ?>
@@ -25,6 +26,7 @@
 			<!--content-->
 		</div>
 	</div>
+	<?php endif; ?>
 	<div class="row">
 		<!--childs-->
 	</div>

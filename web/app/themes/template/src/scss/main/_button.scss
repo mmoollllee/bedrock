@@ -1,11 +1,11 @@
 .button {
    padding: 0.6em 1.3em;
    color: #fff;
-   background-image: $primary-gradient;
+   background-image: $primary-gradient-vert;
+   background-size: 100%;
    box-shadow: 0 6px 16px -2px rgba(8, 29, 26, 0.3);
    display: inline-block;
    cursor: pointer;
-   text-align: left;
    transition: all 0.5s ease-out;
    position: relative;
    font-weight: 600;

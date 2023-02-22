@@ -6,7 +6,8 @@
       'order' => 'ASC',
    ]);
 ?>
-<div class="row col-l-8 justify-content-center team mb-4">
+
+<div class="row justify-content-around team mb-4 p-0 mx-auto">
 <?php
    while ($loop->have_posts()):
       $loop->the_post();
@@ -14,8 +15,8 @@
       $bild = get_field('bild');
       $vita = get_field('vita');
 ?>
-   <div class="col-12 col-s-6 col-m-5 mb-3">
-      <figure class="portrait">
+   <div class="col-6 col-sm-4 col-m-3 mb-3 portrait">
+      <figure>
       <?php if (!empty($bild)): ?>
          <img loading="lazy" <?= acf_responsive_image($bild['ID'], 'medium') ?> />
       <?php endif; ?>

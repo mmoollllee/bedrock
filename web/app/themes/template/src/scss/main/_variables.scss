@@ -5,13 +5,14 @@
 $gray: #424242;
 $gray-light: #7b7b7b;
 $green: #579189;
-$green-light: #6db0a7;
+$green-light: #67B49D;
 $font-color: #878787;
 $font-gray: #D8D8D8;
 $font-dark: rgb(165,165,165);
 
 $primary: $green;
-$primary-gradient: linear-gradient(270deg, $green-light 0%, $green 100%);
+$primary-gradient: linear-gradient(80deg, $green 20%, $green-light 120%);
+$primary-gradient-vert: linear-gradient(0deg, $green 20%, $green-light 120%);
 $gray-gradient: linear-gradient(161deg, $gray-light 0%, $gray 100%);
 
 $dark: #191919;

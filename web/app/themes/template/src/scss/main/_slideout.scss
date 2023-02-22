@@ -3,16 +3,18 @@
    position: relative;
    z-index: 1;
    background-color: $primary;
+   background-image: $primary-gradient;
    transition: all .5s ease-in-out;
+   overflow: hidden;
 
    & > * {
       overflow: hidden;
       transition: all .5s ease-in-out;
    }
 
-      @include media-breakpoint-down(m) {
+      @include media-breakpoint-down(l) {
       .slideout-open & {
-         transform: translateX(-5%);
+         transform: translateX(-10%);
       
          & > * {
             opacity: 0.5;
@@ -29,27 +31,27 @@
    bottom: 0;
    right: -100%;
    width: 80%;
-   max-width: 800px;
+   max-width: 290px;
    min-height: 100vh;
    -webkit-overflow-scrolling: touch;
    z-index: 1;
    transition: all .5s ease-in-out;
    color: #fff;
    background-color: $primary;
+   background-image: $primary-gradient-vert;
    padding: 2em;
 
-   @include media-breakpoint-down(m) {
+   @include media-breakpoint-down(l) {
    .slideout-open & {
       right: 0;
    }
    }
 
    #navclose {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-      transform: translateX(-50%);
+      position: relative;
+      float:right;
       z-index: 999;
+      margin: 0;
    }
 
    .inner {
@@ -71,18 +73,10 @@
 
       li {
          margin-top: 15px;
-         padding: .5em 1em 0 1em;
          @include make-col-ready();
          @include make-col(6);
-         @include media-breakpoint-up(sm) {
+         @include media-breakpoint-up(m) {
          @include make-col(4);
-         }
-
-         a {
-
-            &:hover {
-               color: #000
-            }
          }
 
          .sub-menu {
@@ -99,14 +93,14 @@
          }
       }
 
-      &#menu-header-menu-1 {
+      &:first-of-type {
+         margin-top: 3em;
          margin-bottom: 3em;
          li {
             a {
                font-weight: 600;
-               text-transform: uppercase;
                letter-spacing: .05em;
-               font-size: 1.2em;
+               font-size: 1.5em;
                font-weight: 600;
                line-height: 2;
             }

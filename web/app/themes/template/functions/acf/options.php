@@ -213,6 +213,7 @@ $acfbuilder
       'ui' => 1,
       'choices' => [
          'bg-dark' => 'dunkler Hintergrund',
+         'button' => 'Link als Button'
       ],
    ])
    ->addImage('notification-banner-icon', [

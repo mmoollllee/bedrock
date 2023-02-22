@@ -8955,12 +8955,17 @@ a[href^="mailto:"]:before, [data-fancybox]:not([data-src]):after, .breadcrumb-tr
 }
 
 .slider, .slider img {
-  height: 33vw;
+  height: 70vw;
   min-height: 30vh;
   max-height: 66vh;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 576px) {
+  .slider, .slider img {
+    max-height: 50vh;
+  }
 }
 
 .carousel-auto, .carousel-auto figure {
@@ -8970,7 +8975,6 @@ a[href^="mailto:"]:before, [data-fancybox]:not([data-src]):after, .breadcrumb-tr
 .carousel__slide {
   --carousel-slide-width: auto;
   padding: 0;
-  margin-right: 1em;
 }
 .carousel__slide img {
   width: auto;
@@ -8990,88 +8994,11 @@ a[href^="mailto:"]:before, [data-fancybox]:not([data-src]):after, .breadcrumb-tr
   margin-bottom: 0;
 }
 
-/* lora-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 600;
-  src: url("fonts/lora-v26-latin-600.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lora-v26-latin-600.eot?#iefix") format("embedded-opentype"), url("fonts/lora-v26-latin-600.woff2") format("woff2"), url("fonts/lora-v26-latin-600.woff") format("woff"), url("fonts/lora-v26-latin-600.ttf") format("truetype"), url("fonts/lora-v26-latin-600.svg#Lora") format("svg"); /* Legacy iOS */
-}
-/* lora-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/lora-v26-latin-700.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lora-v26-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/lora-v26-latin-700.woff2") format("woff2"), url("fonts/lora-v26-latin-700.woff") format("woff"), url("fonts/lora-v26-latin-700.ttf") format("truetype"), url("fonts/lora-v26-latin-700.svg#Lora") format("svg"); /* Legacy iOS */
-}
-/* lato-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  src: url("fonts/lato-v23-latin-300.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-300.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-300.woff2") format("woff2"), url("fonts/lato-v23-latin-300.woff") format("woff"), url("fonts/lato-v23-latin-300.ttf") format("truetype"), url("fonts/lato-v23-latin-300.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-300italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 300;
-  src: url("fonts/lato-v23-latin-300italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-300italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-300italic.woff2") format("woff2"), url("fonts/lato-v23-latin-300italic.woff") format("woff"), url("fonts/lato-v23-latin-300italic.ttf") format("truetype"), url("fonts/lato-v23-latin-300italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-regular.woff2") format("woff2"), url("fonts/lato-v23-latin-regular.woff") format("woff"), url("fonts/lato-v23-latin-regular.ttf") format("truetype"), url("fonts/lato-v23-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/lato-v23-latin-italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-italic.woff2") format("woff2"), url("fonts/lato-v23-latin-italic.woff") format("woff"), url("fonts/lato-v23-latin-italic.ttf") format("truetype"), url("fonts/lato-v23-latin-italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-700.woff2") format("woff2"), url("fonts/lato-v23-latin-700.woff") format("woff"), url("fonts/lato-v23-latin-700.ttf") format("truetype"), url("fonts/lato-v23-latin-700.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/lato-v23-latin-700italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-700italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-700italic.woff2") format("woff2"), url("fonts/lato-v23-latin-700italic.woff") format("woff"), url("fonts/lato-v23-latin-700italic.ttf") format("truetype"), url("fonts/lato-v23-latin-700italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
 body {
-  font-size: 16px;
+  font-size: 15px;
   color: #000;
   font-weight: 300;
   line-height: 1.3;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
 }
 
 h1,
@@ -9102,9 +9029,8 @@ h1,
 h2,
 .h2 {
   font-weight: 600;
-  letter-spacing: 0.04em;
-  font-size: 1.5rem;
-  margin: 0.5em 0;
+  font-size: 1.7rem;
+  line-height: 1.4;
 }
 h2 small, h2 .small, .h2 .small,
 .h2 small {
@@ -9119,8 +9045,9 @@ h2 a,
 
 h3,
 .h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 h4,
@@ -9165,9 +9092,6 @@ a:after {
 a:hover:after {
   transform: translateX(200%);
 }
-a[data-icon-left], a[data-icon-right] {
-  text-decoration: none;
-}
 
 button {
   -webkit-appearance: none;
@@ -9209,11 +9133,11 @@ small,
 .button {
   padding: 0.6em 1.3em;
   color: #fff;
-  background-image: linear-gradient(270deg, #6db0a7 0%, #579189 100%);
+  background-image: linear-gradient(0deg, #579189 20%, #67B49D 120%);
+  background-size: 100%;
   box-shadow: 0 6px 16px -2px rgba(8, 29, 26, 0.3);
   display: inline-block;
   cursor: pointer;
-  text-align: left;
   transition: all 0.5s ease-out;
   position: relative;
   font-weight: 600;
@@ -9236,6 +9160,7 @@ small,
 
 a[href^="tel:"],
 a[href^="mailto:"] {
+  display: inline-block !important;
   text-decoration: none !important;
   margin-left: 0.5em;
   padding-right: 0.5em;
@@ -9290,10 +9215,6 @@ a[href^="mailto:"]:before {
 [data-icon-right]:after {
   left: -0.3em;
   line-height: 1;
-}
-
-.icon-close:before {
-  font-size: 0.9em;
 }
 
 .button.icon-close:before,
@@ -9491,52 +9412,13 @@ img, video {
 .container-l,
 .container-xl,
 .container-xxl {
-  max-width: 100%;
   position: relative;
   padding: 0;
+  padding-bottom: 2em;
 }
 
 p:empty {
   display: none;
-}
-
-main {
-  color: #fff;
-}
-
-.content,
-.section-content {
-  padding: 2em;
-}
-
-.portrait {
-  border-radius: 50%;
-  overflow: hidden;
-  height: 7em;
-  width: 7em;
-  display: block;
-  margin: 1em auto;
-}
-.portrait img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-#top-logo .logo-l {
-  width: 60%;
-  max-width: 360px;
-}
-@media (min-width: 576px) {
-  #top-logo .logo-l {
-    width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  #top-logo .logo-l {
-    width: 40%;
-  }
 }
 
 #wrapper > nav {
@@ -9548,11 +9430,26 @@ main {
   color: #fff;
   background: none;
   height: 0;
-  transform: translateY(2vw);
+  transform: translateY(calc(1.5em + 2vw));
+  padding: 0;
+}
+@media (min-width: 576px) {
+  #wrapper > nav {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) {
+  #wrapper > nav {
+    transform: translateY(2.1em);
+  }
 }
 #wrapper > nav .row {
   position: relative;
   z-index: 2;
+}
+
+#wrapper > header {
+  padding-bottom: 0;
 }
 
 @media (min-width: 450px) {
@@ -9650,16 +9547,22 @@ main {
 
 #navtoggle, #navclose {
   padding: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   width: 2em;
   height: 2em;
   line-height: 2em;
   border-radius: 50%;
+  color: #579189;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
   text-align: center;
   box-shadow: 0 3px 15px 3px rgba(0, 0, 0, 0.1);
-  margin-right: 1em;
+  margin-right: 1.5em;
+}
+@media (min-width: 768px) {
+  #navtoggle, #navclose {
+    margin-right: 2.5em;
+  }
 }
 #navtoggle:hover, #navclose:hover {
   color: #fff;
@@ -9691,7 +9594,7 @@ main {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .slideout-open #menu-hauptmenue {
     max-width: 100%;
     box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.2);
@@ -9707,15 +9610,17 @@ main {
   position: relative;
   z-index: 1;
   background-color: #579189;
+  background-image: linear-gradient(80deg, #579189 20%, #67B49D 120%);
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 #wrapper > * {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .slideout-open #wrapper {
-    transform: translateX(-5%);
+    transform: translateX(-10%);
   }
   .slideout-open #wrapper > * {
     opacity: 0.5;
@@ -9729,26 +9634,26 @@ main {
   bottom: 0;
   right: -100%;
   width: 80%;
-  max-width: 800px;
+  max-width: 290px;
   min-height: 100vh;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
   transition: all 0.5s ease-in-out;
   color: #fff;
   background-color: #579189;
+  background-image: linear-gradient(0deg, #579189 20%, #67B49D 120%);
   padding: 2em;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .slideout-open #responsivemenu {
     right: 0;
   }
 }
 #responsivemenu #navclose {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  transform: translateX(-50%);
+  position: relative;
+  float: right;
   z-index: 999;
+  margin: 0;
 }
 #responsivemenu .inner {
   background: #579189;
@@ -9769,7 +9674,6 @@ main {
 }
 #responsivemenu ul li {
   margin-top: 15px;
-  padding: 0.5em 1em 0 1em;
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -9779,14 +9683,11 @@ main {
   flex: 0 0 auto;
   width: 50%;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   #responsivemenu ul li {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
-}
-#responsivemenu ul li a:hover {
-  color: #000;
 }
 #responsivemenu ul li .sub-menu li {
   margin-top: 0;
@@ -9796,14 +9697,14 @@ main {
   font-weight: 400 !important;
   font-size: 0.9em !important;
 }
-#responsivemenu ul#menu-header-menu-1 {
+#responsivemenu ul:first-of-type {
+  margin-top: 3em;
   margin-bottom: 3em;
 }
-#responsivemenu ul#menu-header-menu-1 li a {
+#responsivemenu ul:first-of-type li a {
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   line-height: 2;
 }
@@ -9894,23 +9795,19 @@ table.daten tr th {
   max-width: 100%;
 }
 
-.bubble-white {
-  background: #fff;
-  border: 5px solid #579189;
-  -webkit-clip-path: inset(10px round 40px 80px 150px 60px);
-          clip-path: inset(10px round 40px 80px 150px 60px);
-  color: #878787;
-}
-
 #notification {
   background: #fff;
   color: #424242;
 }
+#notification .container {
+  padding: 0 1em 1em;
+}
 #notification svg {
-  max-width: 70px;
+  height: 1.5em;
+  width: 1.5em;
 }
 #notification svg * {
-  fill: #424242;
+  fill: #579189;
 }
 #notification.dark {
   background: transparent;
@@ -9919,8 +9816,12 @@ table.daten tr th {
 #notification.dark svg * {
   fill: #fff;
 }
-#notification p {
+#notification figure, #notification p {
   line-height: 1.1;
+  margin-bottom: 0;
+}
+#notification figure a, #notification p a {
+  display: inline;
 }
 
 #consent-control-banner.is-collapsed {

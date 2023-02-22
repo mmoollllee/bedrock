@@ -21,6 +21,10 @@
 
 	$images = get_sub_field('bilder');
 
+	if (in_array('fullwidth', $layout)) {
+		$container = "";
+	}
+
 	if ($images):
 ?>
 

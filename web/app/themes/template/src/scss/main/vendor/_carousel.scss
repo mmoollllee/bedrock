@@ -1,11 +1,14 @@
 
 .slider {
    &, img {
-      height: 33vw;
+      height: 70vw;
       min-height: 30vh;
       max-height: 66vh;
       overflow: hidden;
       object-fit: cover;
+      @include media-breakpoint-up(sm) {
+         max-height: 50vh;
+      }
    }
 
 }
@@ -19,7 +22,6 @@
 .carousel__slide {
    --carousel-slide-width: auto;
    padding:0;
-   margin-right: 1em;
 
    img {
       width: auto;

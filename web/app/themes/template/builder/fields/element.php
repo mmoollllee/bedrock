@@ -31,7 +31,6 @@ $element
       'ui' => 1,
       'wrapper' => ['width' => '20'],
       'choices' => [
-         'mansory-filter' => 'Grid mit Filter',
          'has-title' => 'mit Titel',
       ],
    ])

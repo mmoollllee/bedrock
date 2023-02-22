@@ -15,6 +15,15 @@
 
 ?>
 
+
+<?php 
+// If no layout choosen just print the template
+if (!$layout && $element_template) {
+   require_once(get_template_directory() . '/'.$element_template.'/element.php');
+}
+return
+?>
+
 <div class="<?php the_classes(['element container', ...$layout_classes ]); ?>">
 
    <?php if (in_array('has-title', $layout)) : ?>
@@ -43,4 +52,3 @@
    ?>
    <?php endif; ?>
 </div>
-

@@ -43,10 +43,10 @@ $builder
    ])
    ->addFields($gallery)
 
-   // ->addLayout('element', [
-   //    'label' => 'Element',
-   // ])
-   // ->addFields($element)
+   ->addLayout('element', [
+      'label' => 'Element',
+   ])
+   ->addFields($element)
 
    ->setLocation('post_type', '==', 'page')
    ->or('post_type', '==', 'post')

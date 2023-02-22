@@ -4,16 +4,16 @@
   Register element-*.php Templates für Builder-Elemente
 */
 
-// function acf_load_elements($field) {
-//    // reset choices
-//    $field['choices'] = [];
+function acf_load_elements($field) {
+   // reset choices
+   $field['choices'] = [];
 
-//    // $field['choices']['kontaktbox'] = 'Kontaktbox anzeigen';
+   $field['choices']['team'] = 'Team anzeigen';
 
-//    // return the field
-//    return $field;
-// }
-// add_filter('acf/load_field/name=elements', 'acf_load_elements');
+   // return the field
+   return $field;
+}
+add_filter('acf/load_field/name=elements', 'acf_load_elements');
 
 function register_elemente_cpt() {
    $labels = [

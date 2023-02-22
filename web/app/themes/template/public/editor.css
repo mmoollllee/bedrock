@@ -3410,88 +3410,11 @@ i[class^=icon-]:before, i[class*=" icon-"]:before, [data-icon-left]:before, [dat
   content: "\f11e";
 }
 
-/* lora-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 600;
-  src: url("fonts/lora-v26-latin-600.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lora-v26-latin-600.eot?#iefix") format("embedded-opentype"), url("fonts/lora-v26-latin-600.woff2") format("woff2"), url("fonts/lora-v26-latin-600.woff") format("woff"), url("fonts/lora-v26-latin-600.ttf") format("truetype"), url("fonts/lora-v26-latin-600.svg#Lora") format("svg"); /* Legacy iOS */
-}
-/* lora-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/lora-v26-latin-700.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lora-v26-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/lora-v26-latin-700.woff2") format("woff2"), url("fonts/lora-v26-latin-700.woff") format("woff"), url("fonts/lora-v26-latin-700.ttf") format("truetype"), url("fonts/lora-v26-latin-700.svg#Lora") format("svg"); /* Legacy iOS */
-}
-/* lato-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  src: url("fonts/lato-v23-latin-300.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-300.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-300.woff2") format("woff2"), url("fonts/lato-v23-latin-300.woff") format("woff"), url("fonts/lato-v23-latin-300.ttf") format("truetype"), url("fonts/lato-v23-latin-300.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-300italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 300;
-  src: url("fonts/lato-v23-latin-300italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-300italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-300italic.woff2") format("woff2"), url("fonts/lato-v23-latin-300italic.woff") format("woff"), url("fonts/lato-v23-latin-300italic.ttf") format("truetype"), url("fonts/lato-v23-latin-300italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-regular.woff2") format("woff2"), url("fonts/lato-v23-latin-regular.woff") format("woff"), url("fonts/lato-v23-latin-regular.ttf") format("truetype"), url("fonts/lato-v23-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
-  src: url("fonts/lato-v23-latin-italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-italic.woff2") format("woff2"), url("fonts/lato-v23-latin-italic.woff") format("woff"), url("fonts/lato-v23-latin-italic.ttf") format("truetype"), url("fonts/lato-v23-latin-italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  src: url("fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-700.woff2") format("woff2"), url("fonts/lato-v23-latin-700.woff") format("woff"), url("fonts/lato-v23-latin-700.ttf") format("truetype"), url("fonts/lato-v23-latin-700.svg#Lato") format("svg"); /* Legacy iOS */
-}
-/* lato-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 700;
-  src: url("fonts/lato-v23-latin-700italic.eot"); /* IE9 Compat Modes */
-  src: url("fonts/lato-v23-latin-700italic.eot?#iefix") format("embedded-opentype"), url("fonts/lato-v23-latin-700italic.woff2") format("woff2"), url("fonts/lato-v23-latin-700italic.woff") format("woff"), url("fonts/lato-v23-latin-700italic.ttf") format("truetype"), url("fonts/lato-v23-latin-700italic.svg#Lato") format("svg"); /* Legacy iOS */
-}
 body {
-  font-size: 16px;
+  font-size: 15px;
   color: #000;
   font-weight: 300;
   line-height: 1.3;
-}
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
 }
 
 h1,
@@ -3522,9 +3445,8 @@ h1,
 h2,
 .h2 {
   font-weight: 600;
-  letter-spacing: 0.04em;
-  font-size: 1.5rem;
-  margin: 0.5em 0;
+  font-size: 1.7rem;
+  line-height: 1.4;
 }
 h2 small, h2 .small, .h2 .small,
 .h2 small {
@@ -3539,8 +3461,9 @@ h2 a,
 
 h3,
 .h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5rem;
+  line-height: 1.4;
 }
 
 h4,
@@ -3584,9 +3507,6 @@ a:after {
 }
 a:hover:after {
   transform: translateX(200%);
-}
-a[data-icon-left], a[data-icon-right] {
-  text-decoration: none;
 }
 
 button {
@@ -3812,52 +3732,13 @@ img, video {
 .container-l,
 .container-xl,
 .container-xxl {
-  max-width: 100%;
   position: relative;
   padding: 0;
+  padding-bottom: 2em;
 }
 
 p:empty {
   display: none;
-}
-
-main {
-  color: #fff;
-}
-
-.content,
-.section-content {
-  padding: 2em;
-}
-
-.portrait {
-  border-radius: 50%;
-  overflow: hidden;
-  height: 7em;
-  width: 7em;
-  display: block;
-  margin: 1em auto;
-}
-.portrait img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-#top-logo .logo-l {
-  width: 60%;
-  max-width: 360px;
-}
-@media (min-width: 576px) {
-  #top-logo .logo-l {
-    width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  #top-logo .logo-l {
-    width: 40%;
-  }
 }
 
 #wrapper > nav {
@@ -3869,11 +3750,26 @@ main {
   color: #fff;
   background: none;
   height: 0;
-  transform: translateY(2vw);
+  transform: translateY(calc(1.5em + 2vw));
+  padding: 0;
+}
+@media (min-width: 576px) {
+  #wrapper > nav {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 768px) {
+  #wrapper > nav {
+    transform: translateY(2.1em);
+  }
 }
 #wrapper > nav .row {
   position: relative;
   z-index: 2;
+}
+
+#wrapper > header {
+  padding-bottom: 0;
 }
 
 @media (min-width: 450px) {
@@ -3971,16 +3867,22 @@ main {
 
 #navtoggle, #navclose {
   padding: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   width: 2em;
   height: 2em;
   line-height: 2em;
   border-radius: 50%;
+  color: #579189;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
   text-align: center;
   box-shadow: 0 3px 15px 3px rgba(0, 0, 0, 0.1);
-  margin-right: 1em;
+  margin-right: 1.5em;
+}
+@media (min-width: 768px) {
+  #navtoggle, #navclose {
+    margin-right: 2.5em;
+  }
 }
 #navtoggle:hover, #navclose:hover {
   color: #fff;
@@ -4012,7 +3914,7 @@ main {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .slideout-open #menu-hauptmenue {
     max-width: 100%;
     box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.2);

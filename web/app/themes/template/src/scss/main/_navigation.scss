@@ -7,12 +7,25 @@
    color: #fff;
    background: none;
    height: 0;
-   transform: translateY(2vw);
+   transform: translateY(calc(1.5em + 2vw));
+   padding: 0;
+
+   @include media-breakpoint-up(sm) {
+      font-size: 1.2em;
+   }
+
+   @include media-breakpoint-up(m) {
+      transform: translateY(2.1em)
+   }
 
    .row {
       position: relative;
       z-index: 2;
    }
+}
+
+#wrapper > header {
+   padding-bottom: 0;
 }
 
 nav .logo img {
@@ -128,16 +141,21 @@ nav .logo img {
 
 #navtoggle, #navclose {
    padding: 0;
-   font-size: 1.2em;
+   font-size: 1.4em;
    width: 2em;
    height: 2em;
    line-height: 2em;
    border-radius: 50%;
+   color: $primary;
    background-color: $white;
    transition: $transition-base;
    text-align: center;
    box-shadow: 0 3px 15px 3px rgba(0, 0, 0, 0.1);
-   margin-right: 1em;
+   margin-right: 1.5em;
+
+   @include media-breakpoint-up(m) {
+      margin-right: 2.5em;
+   }
 
    &:hover {
       color: $white;
@@ -174,7 +192,7 @@ nav .logo img {
    }
 }
 
-@include media-breakpoint-up(m) {
+@include media-breakpoint-up(l) {
    .slideout-open {
       #menu-hauptmenue {
          max-width: 100%;
