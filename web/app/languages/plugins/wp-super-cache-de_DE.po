@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP Super Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-28 12:33:47+0000\n"
+"PO-Revision-Date: 2023-02-22 19:54:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,39 +23,39 @@ msgstr "Jetpack Boost aktivieren"
 msgid "Rejected Cookies"
 msgstr "Abgelehnte Cookies"
 
-#: wp-cache.php:2272
+#: wp-cache.php:2265
 msgid "%s/advanced-cache.php</em> cannot be updated."
 msgstr "%s/advanced-cache.php</em> kann nicht aktualisiert werden."
 
-#: wp-cache.php:2269
+#: wp-cache.php:2262
 msgid "If you need support for this problem contact your hosting provider."
 msgstr "Für Unterstützung bei diesem Problem kontaktiere deinen Hosting-Anbieter."
 
-#: wp-cache.php:2266
+#: wp-cache.php:2259
 msgid "If it was created by another caching plugin please uninstall that plugin first before activating WP Super Cache. If the file is not removed by that action you should delete the file manually."
 msgstr "Wenn sie von einem anderen Cache-Plugin erzeugt wurde, deinstalliere dieses Plugin bevor du WP Super Cache aktivierst. Wenn die Datei dadurch nicht entfernt wurde, lösche die Datei manuell."
 
-#: wp-cache.php:2261
+#: wp-cache.php:2254
 msgid "The file %s was created by another plugin or by your system administrator. Please examine the file carefully by FTP or SSH and consult your hosting documentation. "
 msgstr "Die Datei %s wurde von einem anderen Plugin oder vom Systemadministrator angelegt. Bitte untersuche die Datei sorgfältig per FTP oder SSH und schaue in der Dokumentation deines Hosting-Anbieters nach."
 
-#: wp-cache.php:2258
+#: wp-cache.php:2251
 msgid "Warning! You may not be allowed to use this plugin on your site."
 msgstr "Achtung! Es kann sein, dass du dieses Plugin nicht auf deiner Seite verwenden darfst."
 
-#: wp-cache.php:2518
+#: wp-cache.php:2511
 msgid "WP-Cached"
 msgstr "WP-Cached"
 
-#: wp-cache.php:2518
+#: wp-cache.php:2511
 msgid "WP-Super-Cached"
 msgstr "WP-Super-Cached"
 
-#: wp-cache.php:1282
+#: wp-cache.php:1280
 msgid "Add Surveys and Polls to your site"
 msgstr "Füge deiner Website Befragungen und Umfragen hinzu"
 
-#: wp-cache.php:1276
+#: wp-cache.php:1274
 msgid "Other Site Tools"
 msgstr "Andere Website-Werkzeuge"
 
@@ -91,7 +91,7 @@ msgstr "304-Browser-Caching. Verbessert die Leistung der Website, indem geprüft
 msgid "Warning! The following settings are disabled because Expert caching is enabled."
 msgstr "Warnung! Folgende Einstellungen sind deaktiviert, weil der Experten-Cache-Modus aktiviert ist."
 
-#: wp-cache-phase2.php:1434
+#: wp-cache-phase2.php:1438
 msgid "Caching disabled. Page not cached."
 msgstr "Caching deaktiviert. Seite nicht gecached."
 
@@ -147,11 +147,11 @@ msgstr "Das WordPress CRON-Jobsystem ist deaktiviert. Dies bedeutet, dass das Ga
 msgid "CRON System Disabled"
 msgstr "CRON-System deaktiviert"
 
-#: wp-cache.php:3431
+#: wp-cache.php:3471
 msgid "WP Super Cache: could not delete files"
 msgstr "WP Super Cache: Dateien konnten nicht gelöscht werden"
 
-#: wp-cache.php:3428
+#: wp-cache.php:3468
 msgid ""
 "You should delete these files manually.\n"
 "You may need to change the permissions of the files or parent directory.\n"
@@ -167,7 +167,7 @@ msgstr ""
 "\n"
 "Vielen Dank."
 
-#: wp-cache.php:3423
+#: wp-cache.php:3463
 msgid ""
 "Dear User,\n"
 "\n"
@@ -181,23 +181,23 @@ msgstr ""
 "nicht gelöscht werden.\n"
 "\n"
 
-#: wp-cache.php:2009
+#: wp-cache.php:2002
 msgid "Error: Configuration file %s is missing. Please reload the page."
 msgstr "Fehler: Konfigurationsdatei %s fehlt. Bitte lade die Seite neu."
 
-#: wp-cache.php:2006
+#: wp-cache.php:1999
 msgid "Error: Configuration file %s could not be loaded. Please reload the page."
 msgstr "Fehler: Konfigurationsdatei %s konnte nicht geladen werden. Bitte lade die Seite neu."
 
-#: wp-cache.php:2003
+#: wp-cache.php:1996
 msgid "Error: The directory containing the configuration file %s is read only. Please make sure it is writeable by the webserver."
 msgstr "Fehler: Der Ordner mit der Konfigurationsdatei %s ist schreibgeschützt. Bitte stelle sicher, dass er vom Webserver beschreibbar ist."
 
-#: wp-cache.php:2000
+#: wp-cache.php:1993
 msgid "Error: Configuration file is read only. Please make sure %s is writeable by the webserver."
 msgstr "Fehler: Die Konfigurationsdatei ist schreibgeschützt. Bitte stelle sicher, dass %s vom Webserver beschreibbar ist."
 
-#: wp-cache.php:1997
+#: wp-cache.php:1990
 msgid "Error: Could not rename temporary file to configuration file. Please make sure %s is writeable by the webserver."
 msgstr "Fehler: Die temporäre Datei konnte nicht in eine Konfigurationsdatei umbenannt werden. Bitte stelle sicher, dass %s vom Webserver beschreibbar ist."
 
@@ -213,7 +213,7 @@ msgstr "Einstellungen speichern"
 msgid "disable"
 msgstr "deaktivieren"
 
-#: wp-cache.php:3376
+#: wp-cache.php:3416
 msgid "Warning! WP Super Cache preload was interrupted but has been restarted."
 msgstr "Warnung! Der WP Super Cache Preloader wurde unterbrochen, aber neu gestartet."
 
@@ -225,23 +225,23 @@ msgstr "Nginx-Regeln findest du <a href=\"%s\">hier</a>. Diese werden aber nicht
 msgid "Warning! You must set WP_CACHE and WPCACHEHOME in your wp-config.php for this plugin to work correctly:"
 msgstr "Warnung! Du musst WP_CACHE und WPCACHEHOME in deiner wp-config.php setzen, damit dieses Plugin korrekt funktioniert:"
 
-#: wp-cache.php:2191
+#: wp-cache.php:2184
 msgid "Not allowed to edit %s per configuration."
 msgstr "Es ist laut Konfiguration nicht erlaubt %s zu bearbeiten."
 
-#: wp-cache.php:1328
+#: wp-cache.php:1326
 msgid "<strong>Warning</strong>! Due to the way WordPress upgrades plugins, the ones you upload to the WP Super Cache folder (wp-super-cache/plugins/) will be deleted when you upgrade WP Super Cache. To avoid this loss, load your cache plugins from a different location. When you set <strong>$wp_cache_plugins_dir</strong> to the new location in wp-config.php, WP Super Cache will look there instead. <br />You can find additional details in the <a href=\"%s\">developer documentation</a>."
 msgstr "<strong>Warnung</strong>! Aufgrund der Art und Weise, wie WordPress Plugins aktualisiert, werden die Plugins, die du in den WP Super Cache Ordner (wp-super-cache/plugins/) hochlädst, gelöscht, wenn du das WP Super Cache Plugin aktualisierst. Um diesen Verlust zu vermeiden, solltest du deine Cache-Plugins von einem anderen Ort laden. Wenn du <strong>$wp_cache_plugins_dir</strong> auf den neuen Speicherort in wp-config.php setzt, wird WP Super Cache stattdessen dort suchen. <br />Weitere Details findest du in der <a href=\"%s\">Entwicklerdokumentation</a>."
 
-#: wp-cache.php:1327
+#: wp-cache.php:1325
 msgid "Keep in mind that cache plugins are for advanced users only. To create and manage them, you'll need extensive knowledge of both PHP and WordPress actions."
 msgstr "Der Umgang mit Cache-Plugins wird nur erfahrenen Benutzern empfohlen. Um sie einzurichten und zu unterhalten werden umfassende Kenntnisse in PHP und WordPress benötigt."
 
-#: wp-cache.php:1326
+#: wp-cache.php:1324
 msgid "Cache plugins are PHP scripts you'll find in a dedicated folder inside the WP Super Cache folder (wp-super-cache/plugins/). They load at the same time as WP Super Cache, and before regular WordPress plugins."
 msgstr "Cache-Plugins sind PHP-Skripte innerhalb des Plugin-Ordners von WP Super Cache (wp-super-cache/plugins). Sie werden gleichzeitig mit WP Super Cache vor allen regulären WordPress-Plugins geladen."
 
-#: plugins/wptouch.php:139
+#: plugins/wptouch.php:138
 msgid "Provides support for WPTouch mobile theme and plugin."
 msgstr "Unterstützt das WPTouch-Mobile-Theme und -Plugin."
 
@@ -253,11 +253,11 @@ msgstr "Bietet Unterstützung für das mobile Jetpack-Theme und -Plugin. PHP-Cac
 msgid "Provides support for Domain Mapping plugin to map multiple domains to a blog."
 msgstr "Unterstützt das Plugin Domain Mapping, um mehrere Domains einem Blog zuzuordnen."
 
-#: plugins/badbehaviour.php:99
+#: plugins/badbehaviour.php:98
 msgid "Support for Bad Behavior. (Only WPCache caching supported, disabled compression and requires Bad Behavior in \"%s/plugins/bad-behavior/\") "
 msgstr "Unterstützung für Bad Behavior. (Nur WPCache Caching unterstützt, Komprimierung deaktiviert und erfordert Bad Behavior in „%s/plugins/bad-behavior/“) "
 
-#: wp-cache.php:1029
+#: wp-cache.php:1027
 msgid "Preload Active"
 msgstr "Preload ist aktiv"
 
@@ -279,19 +279,19 @@ msgstr ""
 msgid "<strong style=\"color: red\">WARNING:</strong> Your siteurl and homeurl are different. The plugin is using %s as the homepage URL of your site but if that is wrong please use the filter \"ossdl_off_blog_url\" to fix it."
 msgstr "<strong style=\"color: red\">WARNUNG:</strong>Deine siteurl und deine homeurl sind unterschiedlich. Das Plugin verwendet %s als Homepage-URL deiner Webseite, aber wenn das falsch ist, verwende bitte den Filter \"ossdl_off_blog_url\", um es zu beheben."
 
-#: wp-cache.php:2555
+#: wp-cache.php:2548
 msgid "Preload mode is enabled. Supercache files will never be expired."
 msgstr "Der Modus zum Vorausladen wurde aktiviert. Dateien im Supercache laufen daher nie ab."
 
-#: wp-cache.php:2525
+#: wp-cache.php:2518
 msgid "Files"
 msgstr "Dateien"
 
-#: wp-cache.php:2524
+#: wp-cache.php:2517
 msgid "%s %s Files"
 msgstr "%s %s Dateien"
 
-#: wp-cache.php:2434
+#: wp-cache.php:2427
 msgid "Warning! You are not allowed to delete that file"
 msgstr "Warnung! Du darfst diese Datei nicht löschen"
 
@@ -335,31 +335,31 @@ msgstr "Das Plugin konnte die %1$s.htaccess-Datei nicht aktualisieren: %2$s.<br 
 msgid "When Expert cache delivery is enabled a file called <em>.htaccess</em> is modified. It should probably be in the same directory as your wp-config.php. This file has special rules that serve the cached files very quickly to visitors without ever executing PHP. The .htaccess file can be updated automatically, but if that fails, the rules will be displayed here and it can be edited by you. You will not need to update the rules unless a warning shows here."
 msgstr "Wenn die Auslieferung des Expert Caches aktiviert ist, wird eine Datei namens <em>.htaccess</em> modifiziert. Sie sollte sich voraussichtlich im selben Verzeichnis wie deine wp-config.php befinden. Diese Datei hat spezielle Regeln, die die zwischengespeicherten Dateien sehr schnell an Besucher weitergeben, ohne PHP auszuführen. Die .htaccess-Datei kann automatisch aktualisiert werden, aber wenn das nicht gelingt, werden die Regeln hier angezeigt und können von dir bearbeitet werden. Du musst die Regeln nicht aktualisieren, es sei denn, es wird hier eine Warnung angezeigt."
 
-#: wp-cache.php:1292
+#: wp-cache.php:1290
 msgid "Please <a href=\"%s\">rate us</a> and give feedback."
 msgstr "Bitte <a href=\"%s\">bewerte uns</a> und gib Feedback."
 
-#: wp-cache.php:1289
+#: wp-cache.php:1287
 msgid "Try out the <a href=\"%1$s\">development version</a> for the latest fixes (<a href=\"%2$s\">changelog</a>)."
 msgstr "Probiere die <a href=\"%1$s\">Entwicklungs-Version</a> mit den neuesten Korrekturen aus (<a href=\"%2$s\">Änderungsprotokoll</a>)."
 
-#: wp-cache.php:1288
+#: wp-cache.php:1286
 msgid "Visit the <a href=\"%1$s\">plugin homepage</a>."
 msgstr "Besuche die <a href=\"%1$s\">Plugin-Homepage</a>."
 
-#: wp-cache.php:1287
+#: wp-cache.php:1285
 msgid "Check out the <a href=\"%1$s\">support forum</a> and <a href=\"%2$s\">FAQ</a>."
 msgstr "Sehe dir das <a href=\"%1$s\">Support-Forum</a> und die <a href=\"%2$s\">FAQ</a> an."
 
-#: wp-cache.php:1286
+#: wp-cache.php:1284
 msgid "Use the <a href=\"%1$s\">Debug tab</a> for diagnostics."
 msgstr "Benutze den Tab <a href=\"%1$s\">Debug</a> für Diagnosen."
 
-#: wp-cache.php:1281
+#: wp-cache.php:1279
 msgid "Fast video hosting (paid)"
 msgstr "Schnelles Video-Hosting (kostenpflichtig)"
 
-#: wp-cache.php:1280
+#: wp-cache.php:1278
 msgid "Speed up images and photos (free)"
 msgstr "Bilder und Fotos beschleunigen (kostenlos)"
 
@@ -420,7 +420,7 @@ msgstr "Modus zum Vorausladen (Speicherbereinigung deaktiviert. Empfohlen.)"
 msgid "In &#8217;Preload Mode&#8217; regular garbage collection will be disabled so that old cache files are not deleted. This is a recommended setting when the cache is preloaded."
 msgstr "Im &#8217;Preload-Modus&#8217; wird die normale Speicherbereinigung deaktiviert, so dass alte Cache-Dateien nicht gelöscht werden. Dies ist eine empfohlene Einstellung, wenn der Cache vorab geladen ist."
 
-#: rest/class.wp-super-cache-rest-update-settings.php:313
+#: rest/class.wp-super-cache-rest-update-settings.php:312
 msgid "You attempted to enable compression but `zlib.output_compression` is enabled. See #21 in the Troubleshooting section of the readme file."
 msgstr "Du hast versucht, die Komprimierung zu aktivieren, aber `zlib.output_compression` ist aktiviert. Siehe # 21 im Abschnitt Fehlerbehebung der Readme-Datei."
 
@@ -436,35 +436,35 @@ msgstr "Zeitstempel wurden nicht gefunden"
 msgid "Coarse file locking. You do not need this as it will slow down your website."
 msgstr "Grobes File Locking. Du benötigst das nicht, da es deine Website verlangsamt."
 
-#: wp-cache.php:1965
+#: wp-cache.php:1958
 msgid "Logout"
 msgstr "Abmelden"
 
-#: wp-cache.php:1961
+#: wp-cache.php:1954
 msgid "The logout link will log out all WordPress users on this site except you. Your authentication cookie will be updated, but you will not be logged out."
 msgstr "Der Abmelde-Link wird alle WordPress-Benutzer dieser Website abmelden außer dir."
 
-#: wp-cache.php:1959
+#: wp-cache.php:1952
 msgid "Your site is using a very old version of WordPress. When you update to the latest version everyone will be logged out and cookie information updated."
 msgstr "Deine Seite nutzt eine sehr alte Version von WordPress. Bei einem Update zur neusten Version werden alle Benutzer ausgeloggt und Cookie-Informationen aktualisiert."
 
-#: wp-cache.php:1956
+#: wp-cache.php:1949
 msgid "If you just installed WP Super Cache for the first time, you can dismiss this message. Otherwise, you should probably refresh the login cookies of all logged in WordPress users here by clicking the logout link below."
 msgstr "Falls du WP Super Cache das erste Mal installiert hast, kannst du diese Nachricht ignorieren. Wenn nicht, sollten die Anmelde-Cookies aller WordPress-Benutzer durch das Klicken des unten stehenden Links aktualisiert werden."
 
-#: wp-cache.php:1954
+#: wp-cache.php:1947
 msgid "Your server is configured to show files and directories, which may expose sensitive data such as login cookies to attackers in the cache directories. That has been fixed by adding a file named index.html to each directory. If you use simple caching, consider moving the location of the cache directory on the Advanced Settings page."
 msgstr "Dein Server ist so konfiguriert, dass Dateien und Ordner sichtbar sind, die sensible Daten wie Anmelde-Cookies für Angreifer verfügbar machen können. Dieses Problem wurde gelöst, indem jedem Ordner eine Datei namens index.html hinzugefügt wird. Falls du PHP oder Legacy Caching verwendest, sollte darüber nachgedacht werden, den Speicherort des Cache-Ordners von der Einstellungs-Seite aus zu ändern.      "
 
-#: wp-cache.php:1948
+#: wp-cache.php:1941
 msgid "All users of this site have been logged out to refresh their login cookies."
 msgstr "Alle Benutzer dieser Website wurden abgemeldet um ihre Anmelde-Cookies zu aktualisieren."
 
-#: wp-cache.php:1947 wp-cache.php:1953
+#: wp-cache.php:1940 wp-cache.php:1946
 msgid "WP Super Cache Warning!"
 msgstr "WP Super Cache Warnung!"
 
-#: wp-cache.php:1472
+#: wp-cache.php:1469
 msgid "Cannot delete directory"
 msgstr "Verzeichnis konnte nicht gelöscht werden"
 
@@ -532,7 +532,7 @@ msgstr "WP Super Cache"
 msgid "Delete cache of the current page"
 msgstr "Cache der aktuellen Seite löschen"
 
-#: wp-cache.php:3438
+#: wp-cache.php:3478
 msgid ""
 "Dear User,\n"
 "\n"
@@ -561,11 +561,11 @@ msgstr ""
 "WP-Super-Cache-Plugin\n"
 "https://de.wordpress.org/plugins/wp-super-cache/"
 
-#: wp-cache.php:3438
+#: wp-cache.php:3478
 msgid "Supercache Uninstall Problems"
 msgstr "Supercache Deinstallationsprobleme"
 
-#: wp-cache.php:3360
+#: wp-cache.php:3400
 msgid ""
 "Preload has been restarted.\n"
 "%s"
@@ -573,272 +573,272 @@ msgstr ""
 "Preload wurde neu gestartet.\n"
 "%s"
 
-#: wp-cache.php:3360
+#: wp-cache.php:3400
 msgid "[%s] Preload may have stalled."
 msgstr "„Preload“ von %s wurde evtl. unterbrochen."
 
-#: wp-cache.php:3315
+#: wp-cache.php:3355
 msgid "Cleaning up old supercache files."
 msgstr "Bereinigen alter Supercache-Dateien."
 
-#: wp-cache.php:3315
+#: wp-cache.php:3355
 msgid "[%s] Cache Preload Completed"
 msgstr "[%s] Cache-Preload abgeschlossen!"
 
-#: wp-cache.php:3304
+#: wp-cache.php:3344
 msgid "Scheduling next preload refresh in %d minutes."
 msgstr "Nächste \"Preload\"-Aktualisierung in %d Minuten eingeplant."
 
-#: wp-cache.php:3293
+#: wp-cache.php:3333
 msgid "Refreshed the following posts:"
 msgstr "Folgende Beiträge wurden aktualisiert: "
 
-#: wp-cache.php:3293
+#: wp-cache.php:3333
 msgid "[%1$s] %2$d posts refreshed"
 msgstr "[%1$s] %2$d Beiträge aktualisiert"
 
-#: wp-cache.php:3224 wp-cache.php:3283
+#: wp-cache.php:3264 wp-cache.php:3323
 msgid "[%1$s] Cache Preload Stopped"
 msgstr "[%1$s] Cache-Preload abgestellt"
 
-#: wp-cache.php:3257
+#: wp-cache.php:3297
 msgid "[%1$s] Refreshing posts from %2$d to %3$d"
 msgstr "[%1$s] Beiträge von %2$d bis %3$d werden aktualisiert"
 
-#: wp-cache.php:3200
+#: wp-cache.php:3240
 msgid "[%1$s] Refreshing %2$s taxonomy from %3$d to %4$d"
 msgstr "[%1$s] Erneuere %2$s Taxonomie von %3$d zu %4$d"
 
-#: wp-cache.php:3170
+#: wp-cache.php:3210
 msgid "[%1$s] Cache Preload Started"
 msgstr "[%1$s] Cache-Preload gestartet"
 
-#: wp-cache.php:2955
+#: wp-cache.php:2951
 msgid "Update Mod_Rewrite Rules"
 msgstr "Mod_Rewrite-Regeln aktualisieren"
 
-#: wp-cache.php:2943
+#: wp-cache.php:2939
 msgid " Make sure they appear before any existing WordPress rules. "
 msgstr " Stelle sicher dass sie oberhalb sämtlicher WordPress-Regeln stehen. "
 
-#: wp-cache.php:2942
+#: wp-cache.php:2938
 msgid "You can edit the file yourself. Add the following rules."
 msgstr "Du kannst die Datei selbst bearbeiten und folgende Regeln hinzufügen."
 
-#: wp-cache.php:2941
+#: wp-cache.php:2937
 msgid "To serve static html files your server must have the correct mod_rewrite rules added to a file called <code>%s.htaccess</code>"
 msgstr "Um statische HTML-Dateien zu erstellen, benötigt dein Server die korrekten \"mod_rewrite rules\" in der Datei <code>%s.htaccess</code>."
 
-#: wp-cache.php:2937
+#: wp-cache.php:2933
 msgid "Alternatively, you can edit your <code>%s.htaccess</code> file manually and add the following code (before any WordPress rules):"
 msgstr "Alternativ dazu kannst Du deine <code>%s.htaccess</code> manuell bearbeiten und folgenden Code einfügen (oberhalb aller WordPress-Einträge): "
 
-#: wp-cache.php:2937
+#: wp-cache.php:2933
 msgid "Refresh this page when the file permissions have been modified."
 msgstr "Lade diese Seite neu, wenn die Datei-Berechtigungen geändert wurden."
 
-#: wp-cache.php:2937
+#: wp-cache.php:2933
 msgid "The file <code>%s.htaccess</code> cannot be modified by the web server. Please correct this using the chmod command or your ftp client."
 msgstr "Die Datei <code>%s.htaccess</code> kann vom Webserver nicht aktualisiert werden. Bitte ändere das per CHMOD-Command oder FTP-Programm."
 
-#: wp-cache.php:2937
+#: wp-cache.php:2933
 msgid "Cannot update .htaccess"
 msgstr ".htaccess kann nicht aktualisiert werden"
 
-#: wp-cache.php:2899
+#: wp-cache.php:2895
 msgid "WP Super Cache has checked the front page of your blog. Please visit %s if you would like to disable this."
 msgstr "WP-Super-Cache hat die Startseite deines Blogs überprüft. Bitte gehe zu %s, wenn Du die Funktion deaktivieren möchtest."
 
-#: wp-cache.php:2899
+#: wp-cache.php:2895
 msgid "[%s] Front page check!"
 msgstr "[%s] Startseiten-Check!"
 
-#: wp-cache.php:2894
+#: wp-cache.php:2890
 msgid "The cache on your blog has been cleared because the front page of your site is missing the text \"%2$s\". Please visit %1$s to verify the cache has been cleared."
 msgstr "Der Cache deines Blogs wurde geleert, da der Text \"%2$s\" nicht auf der Startseite ist. Bitte gehe zu %1$s um sicherzustellen, dass der Cache bereinigt ist."
 
-#: wp-cache.php:2894
+#: wp-cache.php:2890
 msgid "[%s] Front page is not correct! Cache Cleared!"
 msgstr "[%s] Startseite nicht in Ordnung! Cache geleert!"
 
-#: wp-cache.php:2891
+#: wp-cache.php:2887
 msgid "Please visit %1$s to clear the cache as the front page of your site is not correct and missing the text, \"%2$s\"!"
 msgstr "Bitte gehe zu %1$s um den Cache zu leeren, da deine Startseite nicht in Ordnung zu sein scheint und der Text fehlt, \"%2$s\"!"
 
-#: wp-cache.php:2891
+#: wp-cache.php:2887
 msgid "[%s] Front page is not correct! Please clear cache!"
 msgstr "[%s] Startseite ist nicht in Ordnung! Bitte den Cache leeren!"
 
-#: wp-cache.php:2884
+#: wp-cache.php:2880
 msgid "The cache on your blog has been cleared because the front page of your site is now downloading. Please visit %s to verify the cache has been cleared."
 msgstr "Der Cache deines Blogs wurde geleert, da die Startseite gerade runterlädt. Bitte gehe zu %s um sicherzustellen, dass der Cache bereinigt ist."
 
-#: wp-cache.php:2884
+#: wp-cache.php:2880
 msgid "[%s] Front page is gzipped! Cache Cleared!"
 msgstr "[%s] Startseite mit Gzip komprimiert! Cache geleert!"
 
-#: wp-cache.php:2881
+#: wp-cache.php:2877
 msgid "Please visit %s to clear the cache as the front page of your site is now downloading!"
 msgstr "Bitte gehe zu %s um den Cache zu leeren, da die Startseite deiner Website gerade heruntergeladen wird!"
 
-#: wp-cache.php:2881
+#: wp-cache.php:2877
 msgid "[%s] Front page is gzipped! Please clear cache!"
 msgstr "[%s] Startseite mit Gzip komprimiert! Bitte den Cache leeren."
 
-#: wp-cache.php:2860
+#: wp-cache.php:2856
 msgid "Warning! WP Super Cache caching <strong>was</strong> broken but has been <strong>fixed</strong>! The script advanced-cache.php could not load wp-cache-phase1.php.<br /><br />The file %1$s/advanced-cache.php has been recreated and WPCACHEHOME fixed in your wp-config.php. Reload to hide this message."
 msgstr "Warnung! WP Super Cache Caching <strong>war</strong> fehlerhaft, wurde aber <strong>repariert</strong>! Das Script advanced-cache.php konnte wp-cache-phase1.php nicht laden.<br /><br />Die Datei %1$s/advanced.cache.php wurde neu erstellt und WPCACHEHOME wurde in wp-config.php repariert. Aktualisiere um diese Nachricht unsichtbar zu machen."
 
-#: wp-cache.php:2856
+#: wp-cache.php:2852
 msgid "WP Super Cache is disabled. Please go to the <a href=\"%s\">plugin admin page</a> to enable caching."
 msgstr "WP-Super-Cache ist deaktiviert. Bitte gehe zur <a href=\"%s\">Seite der Plugin-Administration</a> um Caching zu aktivieren."
 
-#: wp-cache.php:2846
+#: wp-cache.php:2842
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: wp-cache.php:2840
+#: wp-cache.php:2836
 msgid "WP Super Cache must be configured. Go to <a href=\"%s\">the admin page</a> to enable and configure the plugin."
 msgstr "WP-Super-Cache muss konfiguriert werden. Gehe zu den <a href=\"%s\">Einstellungen</a>, um das Plugin zu aktivieren und zu konfigurieren."
 
-#: wp-cache.php:2597
+#: wp-cache.php:2590
 msgid "Delete Super Cache cached files (opens in new window)"
 msgstr "Lösche Super-Cache gecachete Dateien (öffnet in neuem Fenster)"
 
-#: wp-cache.php:2568
+#: wp-cache.php:2561
 msgid "Delete Expired"
 msgstr "Abgelaufene löschen"
 
-#: wp-cache.php:2553
+#: wp-cache.php:2546
 msgid "Expired files are files older than %s seconds. They are still used by the plugin and are deleted periodically."
 msgstr "Abgelaufene Dateien sind Dateien die älter als %s Sekunden sind. Sie werden noch vom Plugin genutzt und in regelmässigen Abständen gelöscht."
 
-#: wp-cache.php:2550
+#: wp-cache.php:2543
 msgid "List all cached files"
 msgstr "Alle Cache-Dateien auflisten"
 
-#: wp-cache.php:2548
+#: wp-cache.php:2541
 msgid "Too many cached files, no listing possible."
 msgstr "Zu viele Cache-Dateien, Auflistung nicht möglich."
 
-#: wp-cache.php:2546
+#: wp-cache.php:2539
 msgid "Hide file list"
 msgstr "Datei-Liste verbergen"
 
-#: partials/debug.php:24 wp-cache.php:2525
+#: partials/debug.php:24 wp-cache.php:2518
 msgid "Delete"
 msgstr "Löschen"
 
-#: wp-cache.php:2525
+#: wp-cache.php:2518
 msgid "Age"
 msgstr "Alter"
 
-#: wp-cache.php:2525
+#: wp-cache.php:2518
 msgid "URI"
 msgstr "URI"
 
-#: wp-cache.php:2509
+#: wp-cache.php:2502
 msgid "WP-Super-Cache"
 msgstr "WP-Super-Cache"
 
-#: wp-cache.php:2503 wp-cache.php:2515
+#: wp-cache.php:2496 wp-cache.php:2508
 msgid "%s Expired Pages"
 msgstr "%s abgelaufene Seiten im Cache"
 
-#: wp-cache.php:2502 wp-cache.php:2510
+#: wp-cache.php:2495 wp-cache.php:2503
 msgid "%s Cached Pages"
 msgstr "%s Seiten im Cache"
 
-#: wp-cache.php:2501
+#: wp-cache.php:2494
 msgid "WP-Cache"
 msgstr "WP-Cache"
 
-#: wp-cache.php:2494
+#: wp-cache.php:2487
 msgid "Cache stats last generated: %s minutes ago."
 msgstr "Cache-Statistiken zuletzt vor %s Minuten erneuert."
 
-#: wp-cache.php:2492
+#: wp-cache.php:2485
 msgid "Regenerate cache stats"
 msgstr "Cache-Statistiken erneuern"
 
-#: wp-cache.php:2491
+#: wp-cache.php:2484
 msgid "Cache stats are not automatically generated. You must click the link below to regenerate the stats on this page."
 msgstr "Cache-Statistiken werden nicht automatisch erzeugt. Du musst auf den Link hier unten klicken, um die Statistik für diesen Blog neu zu generieren."
 
-#: wp-cache.php:2452
+#: wp-cache.php:2445
 msgid "Deleting wp-cache file: <strong>%s</strong><br />"
 msgstr "Datei wp-cache löschen: <strong>%s</strong><br />"
 
-#: wp-cache.php:2429
+#: wp-cache.php:2422
 msgid "Deleting supercache file: <strong>%s</strong><br />"
 msgstr "Supercache-Datei löschen: <strong>%s</strong><br />"
 
-#: wp-cache.php:2410
+#: wp-cache.php:2403
 msgid "Cache Contents"
 msgstr "Cache-Inhalte"
 
-#: wp-cache.php:2316
+#: wp-cache.php:2309
 msgid "<h4>WP_CACHE constant added to wp-config.php</h4><p>If you continue to see this warning message please see point 5 of the <a href=\"https://wordpress.org/plugins/wp-super-cache/faq/\">Troubleshooting Guide</a>. The WP_CACHE line must be moved up."
 msgstr "<h4>Konstante WP_CACHE zur wp-config.php hinzugefügt</h4><p>Wenn du diese Warnung weiterhin siehst, schaue dir bitte Punkt 5 des <a href=\"https://wordpress.org/plugins/wp-super-cache/faq/\">Anleitungen zur Problembehandlung (engl.)</a> an. Die Zeile WP_CACHE muss nach oben verschoben werden."
 
-#: wp-cache.php:2312
+#: wp-cache.php:2305
 msgid "Edit <code>%s</code> and add the following line:<br /> <code>define('WP_CACHE', true);</code><br />Otherwise, <strong>WP-Cache will not be executed</strong> by WordPress core. "
 msgstr "Bearbeite <code>%s</code> und füge folgende Zeile hinzu:<br /> <code>define('WP_CACHE', true);</code><br />Ansonsten wird <strong>WP-Cache nicht ausgeführt</strong> durch Wordpress."
 
-#: wp-cache.php:2311
+#: wp-cache.php:2304
 msgid "<strong>Error: WP_CACHE is not enabled</strong> in your <code>wp-config.php</code> file and I couldn&#8217;t modify it."
 msgstr "<strong>Fehler: WP_CACHE ist nicht aktiviert</strong> in deiner <code>wp-config.php</code> und ich kann sie nicht modifizieren."
 
-#: wp-cache.php:2309
+#: wp-cache.php:2302
 msgid "<h4>WP_CACHE constant set to false</h4><p>The WP_CACHE constant is used by WordPress to load the code that serves cached pages. Unfortunately, it is set to false. Please edit your wp-config.php and add or edit the following line above the final require_once command:<br /><br /><code>define('WP_CACHE', true);</code></p>"
 msgstr "<h4>Die WP_CACHE-Konstante ist auf false gesetzt</h4><p>Die Konstante WP_CACHE wird von WordPress verwendet, um den Code zu laden, der gecachte Seiten ausliefert. Leider ist sie auf false gesetzt. Bitte editiere  deine wp-config.php und füge die folgende Zeile über dem letzten require_once-Befehl hinzu:<br /><br /><br /><code>define('WP_CACHE', true);</code></p>"
 
-#: wp-cache.php:2281
+#: wp-cache.php:2274
 msgid "If that doesn&#8217;t work, make sure the file <em>%s/advanced-cache.php</em> doesn&#8217;t exist:"
 msgstr "Wenn das nicht hilft, stelle sicher dass die Datei <em>%s/advanced-cache.php</em> nicht existiert: "
 
-#: wp-cache.php:2280
+#: wp-cache.php:2273
 msgid "Refresh this page to update <em>%s/advanced-cache.php</em>"
 msgstr "Lade diese Seite neu um <em>%s/advanced-cache.php</em> zu aktualisieren."
 
-#: wp-cache.php:2276
+#: wp-cache.php:2269
 msgid "Make %1$s writable using the chmod command through your ftp or server software. (<em>chmod 777 %1$s</em>) and refresh this page. This is only a temporary measure and you&#8217;ll have to make it read only afterwards again. (Change 777 to 755 in the previous command)"
 msgstr "Vergib %1$s Schreibrechte per CHMOD in der Konsole oder mit deinem FTP-Programm. (<em>chmod 777 %1$s</em>) und lade diese Seite neu. Das ist nur eine zeitweilige Maßnahme und du musst sie danach wieder auf \"Nur Lesen\"  setzen (Ändere 777 zu 755 im vorhergehenden Befehl)."
 
-#: wp-cache.php:2212
+#: wp-cache.php:2205
 msgid "Could not update %s!</em> WPCACHEHOME must be set in config file."
 msgstr "Konnte %s</em> nicht aktualisieren! WPCACHEHOME muss in der Konfigurationsdatei gesetzt sein."
 
-#: wp-cache.php:2153
+#: wp-cache.php:2146
 msgid "Sample WP-Cache config file (<strong>%s</strong>) does not exist. Verify your installation."
 msgstr "WP-Cache Konfigurations-Beispieldatei (<strong>%s</strong>) existiert nicht. Überprüfe die Installation."
 
-#: wp-cache.php:2147
+#: wp-cache.php:2140
 msgid "Configuration file missing and %1$s  directory (<strong>%2$s</strong>) is not writable by the web server. Check its permissions."
 msgstr "Deine WP-Cache Konfigurationsdatei fehlt und %1$s Verzeichnis (<strong>%2$s</strong>) ist nicht beschreibbar für den Webserver. Bitte überprüfe die Berechtigungen für den Webserver."
 
-#: wp-cache.php:2142
+#: wp-cache.php:2135
 msgid "Your WP-Cache config file (<strong>%s</strong>) is out of date and not writable by the Web server. Please delete it and refresh this page."
 msgstr "Deine WP-Cache Konfigurationsdatei (<strong>%s</strong>) ist nicht aktuell und nicht beschreibbar für den Webserver. Bitte lösche sie und lade diese Seite neu."
 
-#: wp-cache.php:2108
+#: wp-cache.php:2101
 msgid "Your cache directory (<strong>%1$s</strong>) or <strong>%2$s</strong> need to be writable for this plugin to work. Double-check it."
 msgstr "Dein Cache-Verzeichnis (<strong>%1$s</strong>) oder <strong>%2$s</strong> muss beschreibbar sein, damit das Plugin funktioniert. Doppelt überprüfen."
 
-#: wp-cache.php:2103
+#: wp-cache.php:2096
 msgid "Your cache directory (<strong>%1$s</strong>) did not exist and couldn&#8217;t be created by the web server. Check %1$s permissions."
 msgstr "Dein Cache-Verzeichnis (<strong>%1$s</strong>) existierte nicht und konnte nicht erstellt werden. Prüfe %1$s Berechtigungen."
 
-#: wp-cache.php:2103 wp-cache.php:2108 wp-cache.php:2142 wp-cache.php:2147
-#: wp-cache.php:2153
+#: wp-cache.php:2096 wp-cache.php:2101 wp-cache.php:2135 wp-cache.php:2140
+#: wp-cache.php:2146
 msgid "Error"
 msgstr "Fehler"
 
-#: wp-cache.php:1887
+#: wp-cache.php:1880
 msgid "GZIP compression is enabled in WordPress, wp-cache will be bypassed until you disable gzip compression."
 msgstr "GZIP-Komprimierung ist in WordPress aktiviert - wp-cache wird überbrückt, bis du  \"gzip compression\" deaktiviert hast."
 
-#: wp-cache.php:1887 wp-cache.php:2191 wp-cache.php:2212 wp-cache.php:2272
+#: wp-cache.php:1880 wp-cache.php:2184 wp-cache.php:2205 wp-cache.php:2265
 msgid "Warning"
 msgstr "Warnung"
 
@@ -1167,7 +1167,7 @@ msgstr "Bereite deinen Server auf eine zu erwartende Höchstlast an Traffic vor,
 msgid "Lock Down:"
 msgstr "Sperren: "
 
-#: wp-cache.php:1387
+#: wp-cache.php:1384
 msgid "Comment moderation is enabled. Your comment may take some time to appear."
 msgstr "Kommentare werden moderiert. Es kann etwas dauern, bis dein Kommentar angezeigt wird."
 
@@ -1179,7 +1179,7 @@ msgstr "Standardkonfiguration wiederherstellen"
 msgid "Fix Configuration"
 msgstr "Konfiguration reparieren"
 
-#: partials/advanced.php:178 wp-cache.php:2947
+#: partials/advanced.php:178 wp-cache.php:2943
 msgid "Rules must be added to %s too:"
 msgstr "Regeln müssen auch noch zu %s hinzugefügt werden: "
 
@@ -1219,55 +1219,55 @@ msgstr "Danke für das Upgrade."
 msgid "Mod Rewrite Rules"
 msgstr "Mod_rewrite-Regeln"
 
-#: wp-cache.php:1361
+#: wp-cache.php:1359
 msgid "Debug"
 msgstr "Fehlersuche"
 
-#: wp-cache.php:1360
+#: wp-cache.php:1358
 msgid "Plugins"
 msgstr "Plugins"
 
-#: wp-cache.php:1359
+#: wp-cache.php:1357
 msgid "Preload"
 msgstr "Vorausladen"
 
-#: wp-cache.php:1358
+#: wp-cache.php:1356
 msgid "Contents"
 msgstr "Inhalte"
 
-#: wp-cache.php:1357
+#: wp-cache.php:1355
 msgid "CDN"
 msgstr "CDN"
 
-#: wp-cache.php:1355
+#: wp-cache.php:1353
 msgid "Easy"
 msgstr "Einfach"
 
-#: wp-cache.php:1339
+#: wp-cache.php:1337
 msgid "Available Plugins"
 msgstr "Verfügbare Plugins"
 
-#: wp-cache.php:1310
+#: wp-cache.php:1308
 msgid "(may not always be accurate on busy sites)"
 msgstr "(auf besucherstarken Seiten vielleicht nicht immer exakt)"
 
-#: wp-cache.php:1306
+#: wp-cache.php:1304
 msgid "Cached %s seconds ago"
 msgstr "Vor %s Sekunden gecached"
 
-#: wp-cache.php:1302
+#: wp-cache.php:1300
 msgid "Newest Cached Pages:"
 msgstr "Neueste Cached-Pages: "
 
-#: wp-cache.php:1301
+#: wp-cache.php:1299
 msgid "Cached pages since %1$s : <strong>%2$s</strong>"
 msgstr "Seit %1$s <strong>%2$s</strong> gecachte Seiten:"
 
-#: wp-cache.php:1291
+#: wp-cache.php:1289
 msgid "Rate This Plugin"
 msgstr "Plugin bewerten"
 
-#: wp-cache.php:1284
+#: wp-cache.php:1282
 msgid "Need Help?"
 msgstr "Benötigst du Hilfe?"
 
@@ -1291,12 +1291,12 @@ msgstr "Caching ist nur eine Möglichkeit, eine Webseite \"schneller\" zu machen
 msgid "Recommended Links and Plugins"
 msgstr "Empfohlene Links und Plugins"
 
-#: partials/easy.php:121 wp-cache.php:2580
+#: partials/easy.php:121 wp-cache.php:2573
 msgid "Delete Cache On All Blogs"
 msgstr "Cache auf allen Websites löschen"
 
 #: inc/delete-cache-button.php:25 inc/delete-cache-button.php:35
-#: partials/easy.php:114 wp-cache.php:2574 wp-cache.php:2597 wp-cache.php:2831
+#: partials/easy.php:114 wp-cache.php:2567 wp-cache.php:2590 wp-cache.php:2827
 msgid "Delete Cache"
 msgstr "Cache leeren"
 
@@ -1460,7 +1460,7 @@ msgstr "Unterstützung für Mobilgeräte. (Externes Plugin oder Theme benötigt.
 msgid "Enable dynamic caching. (See <a href=\"https://wordpress.org/plugins/wp-super-cache/faq/\">FAQ</a> or wp-super-cache/plugins/dynamic-cache-test.php for example code.)"
 msgstr "Dynamisches Caching aktivieren. (Siehe <a href=\"https://wordpress.org/plugins/wp-super-cache/faq/\">FAQ</a> oder wp-super-cache/plugins/dynamic-cache-test.php für Code-Beispiele.)"
 
-#: partials/advanced.php:65 partials/debug.php:51 wp-cache.php:1356
+#: partials/advanced.php:65 partials/debug.php:51 wp-cache.php:1354
 msgid "Advanced"
 msgstr "Erweitert"
 
@@ -1506,19 +1506,19 @@ msgstr "Empfohlen"
 msgid "Caching"
 msgstr "Caching"
 
-#: wp-cache.php:1026
+#: wp-cache.php:1024
 msgid "<strong>Page last cached:</strong> %s"
 msgstr "<strong>Seite zuletzt gecached:</strong> %s"
 
-#: wp-cache.php:1022
+#: wp-cache.php:1020
 msgid "Currently caching from post %d to %d."
 msgstr "Momentan wird von Beitrag %d bis %d  gecached."
 
-#: wp-cache.php:1040
+#: wp-cache.php:1038
 msgid "Full refresh of cache in %d hours %d minutes and %d seconds."
 msgstr "Vollständiges Erneuern des Cache in %d Stunden %d Minuten und %d Sekunden."
 
-#: wp-cache.php:1039
+#: wp-cache.php:1037
 msgid "Refresh of cache in %d hours %d minutes and %d seconds."
 msgstr "Erneuern des Cache in %d Stunden %d Minuten und %d Sekunden."
 
@@ -1566,31 +1566,27 @@ msgstr "Dadurch werden alle publizierten Seiten und Beiträge gecached. Es werde
 msgid "Preload Cache Now"
 msgstr "Cache jetzt vorladen"
 
-#: wp-cache.php:3559
-msgid "Scheduled preloading of cache cancelled."
-msgstr "Planmäßiges Vorausladen des Zwischenspeichers wurde abgebrochen."
-
-#: wp-cache.php:3534
+#: wp-cache.php:3574
 msgid "Scheduled preloading of cache almost cancelled. It may take up to a minute for it to cancel completely."
 msgstr "Geplantes Preloading des Cache fast abgebrochen. Es kann bis zu einer Minute dauern, bis es vollständig abgebrochen ist."
 
-#: partials/preload.php:82 wp-cache.php:1033
+#: partials/preload.php:82 wp-cache.php:1031
 msgid "Cancel Cache Preload"
 msgstr "Cache-Vorausladen abbrechen"
 
-#: wp-cache.php:1054
+#: wp-cache.php:1052
 msgid "Configuration file changed, some values might be wrong. Load the page again from the \"Settings\" menu to reset them."
 msgstr "Die Konfigurationsdatei wurde geändert, einige Werte sind vielleicht falsch. Bitte die Seite neu laden im Menü \"Einstellungen\", um sie zurückzusetzen."
 
-#: wp-cache.php:994
+#: wp-cache.php:992
 msgid "Notice: <em>Expert mode caching enabled</em>. Showing Advanced Settings Page by default."
 msgstr "Hinweis: <em>Caching-Expertenmodus aktiviert</em>. Die Seite „Erweiterte Einstellungen“ wird standardmäßig angezeigt."
 
-#: wp-cache.php:979
+#: wp-cache.php:977
 msgid "WP Super Cache Settings"
 msgstr "WP Super Cache-Einstellungen"
 
-#: wp-cache.php:874
+#: wp-cache.php:873
 msgid "<strong>Warning!</strong> You attempted to enable compression but <code>zlib.output_compression</code> is enabled. See #21 in the Troubleshooting section of the readme file."
 msgstr "<strong>Achtung!</strong> Du hast versucht die Datei-Komprimierung zu aktivieren, aber <code>zlib.output_compression</code> ist aktiv. Lese dazu #21 im Bereich Troubleshooting der Datei readme.txt."
 
@@ -1670,7 +1666,7 @@ msgstr "Du solltest die Zugriffsrechte in %s ändern, stelle sie etwas restrikti
 msgid "Warning! %s is writeable!"
 msgstr "Warnung! %s ist beschreibbar!"
 
-#: wp-cache.php:542 wp-cache.php:570 wp-cache.php:645 wp-cache.php:1963
+#: wp-cache.php:542 wp-cache.php:570 wp-cache.php:645 wp-cache.php:1956
 msgid "Dismiss"
 msgstr "Verwerfen"
 
@@ -1774,15 +1770,15 @@ msgstr "Warnung! Der PHP Safe-Modus ist aktiviert!!"
 msgid "Please create %s/wp-cache-config.php from wp-super-cache/wp-cache-config-sample.php"
 msgstr "Bitte erstelle %s/wp-cache-config.php aus der wp-super-cache/wp-cache-config-sample.php"
 
-#: wp-cache-phase2.php:3380
+#: wp-cache-phase2.php:3388
 msgid "[%1$s] WP Super Cache GC Report"
 msgstr "[%1$s] WP-Super-Cache-GC-Bericht"
 
-#: wp-cache-phase2.php:3370
+#: wp-cache-phase2.php:3378
 msgid "Cache expiry cron job took more than 30 seconds. You should probably run the garbage collector more often."
 msgstr "Der Cron Job um den Cache auslaufen zu lassen hat länger als 30 Sekunden gedauert. Du solltest den Garbage Collector öfters verwenden."
 
-#: wp-cache-phase2.php:3366
+#: wp-cache-phase2.php:3374
 msgid "Cache expiry cron job failed. Job will run again in 10 seconds."
 msgstr "Der Cron-Job um den Cache auslaufen zu lassen war nicht erfolgreich. Der Cron-Job wird in 10 Sekunden erneut ausgeführt."
 
@@ -1798,7 +1794,7 @@ msgstr "Unterstützung für WPTouch ist jetzt %s"
 msgid "Provides support for <a href=\"https://wordpress.org/plugins/wptouch/\">WPTouch</a> mobile theme and plugin."
 msgstr "Stellt die Unterstützung des Mobilthemes und -Plugins <a href=\"https://wordpress.org/plugins/wptouch/\">WPTouch</a> zur Verfügung."
 
-#: plugins/wptouch.php:20 plugins/wptouch.php:138
+#: plugins/wptouch.php:20 plugins/wptouch.php:137
 msgid "WPTouch"
 msgstr "WPTouch"
 
@@ -1864,7 +1860,7 @@ msgstr "Unterstützung von Bad Behaviour ist jetzt %s. "
 msgid "(Only WPCache caching supported, disabled compression and requires <a href=\"http://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in \"%s/plugins/bad-behavior/\") "
 msgstr "(Nur WPCache-Caching unterstützt, deaktivierte Kompression erfordert <a href=\"http://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in „%s/plugins/bad-behavior/“). "
 
-#: plugins/badbehaviour.php:67 plugins/badbehaviour.php:98
+#: plugins/badbehaviour.php:67 plugins/badbehaviour.php:97
 msgid "Bad Behavior"
 msgstr "Bad Behavior"
 
@@ -1890,9 +1886,9 @@ msgstr "Deaktiviert"
 #: plugins/badbehaviour.php:75 plugins/domain-mapping.php:90
 #: plugins/jetpack.php:47 plugins/wptouch.php:28
 msgid "enabled"
-msgstr "aktiviert"
+msgstr "Aktiviert"
 
-#: plugins/awaitingmoderation.php:36 plugins/awaitingmoderation.php:61
+#: plugins/awaitingmoderation.php:36 plugins/awaitingmoderation.php:60
 msgid "Enables or disables plugin to Remove the text \"Your comment is awaiting moderation.\" when someone leaves a moderated comment."
 msgstr "Aktiviert oder deaktiviert das Plugin um den Text \"Dein Kommentar wird vor der Freigabe moderiert.\" zu entfernen, wenn jemand einen zu moderierenden Kommentar hinterlässt. "
 
@@ -1908,7 +1904,7 @@ msgstr "Deaktiviert"
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: plugins/awaitingmoderation.php:32 plugins/awaitingmoderation.php:60
+#: plugins/awaitingmoderation.php:32 plugins/awaitingmoderation.php:59
 msgid "Awaiting Moderation"
 msgstr "Wartet auf Freigabe "
 
