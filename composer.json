@@ -45,7 +45,7 @@
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "6.1.1",
+    "roots/wordpress": "6.3.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
     "wpengine/advanced-custom-fields-pro": "*",
@@ -92,9 +92,6 @@
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
-    "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
-    ],
     "test": [
       "phpcs"
     ]
