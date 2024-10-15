@@ -54,8 +54,15 @@ Bedrock is a WordPress boilerplate for developers that want to manage their proj
 See the [Bedrock installation documentation](https://roots.io/bedrock/docs/installation/).
 
 ## Update
-
+This branch from roots/bedrock
 `git merge bedrock/master --no-commit --no-ff`
+Other project from this branch
+
+```sh
+git remote add bedrock git@github.com:mmoollllee/bedrock.git
+git fetch bedrock
+git merge bedrock/master --no-commit --no-ff --allow-unrelated-histories
+```
 
 ## Installation
 
