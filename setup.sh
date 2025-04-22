@@ -18,16 +18,6 @@ WP_ENV='development'
 WP_HOME='http://${PROJECT_NAME}.test'
 WP_SITEURL='http://${PROJECT_NAME}.test/wp'
 
-DEP_HOSTNAME='xy.de'
-DEP_REPO='git@github.com:mmoollllee/repo.git'
-DEP_BRANCH='main'
-DEP_DIR='~/httpdocs/deploy'
-DEP_STAGE_DIR='~/stage.xy.de/deploy'
-DEP_USERNAME='asdf'
-DEP_STAGE_USERNAME='asdf'
-DEP_THEME_PATH='web/app/themes/template'
-DEP_KEEP_RELEASES=2
-
 EOL
     echo ".env file created successfully."
   fi

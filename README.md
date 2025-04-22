@@ -63,6 +63,13 @@ git push -u origin master
 sh setup.sh
 ```
 
+## Deploy
+- Set your servers hostname in deploy.php
+- Add your SSH key to the server
+- Add your Servers SSH key to your private Github Repository
+- run `dep deploy prod` and follow
+- set the http root to `deploy-path/current/web`
+
 ## Update
 
 This branch from roots/bedrock
