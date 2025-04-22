@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c1ef61dbb58b3c117fb00dff0552301",
+    "content-hash": "f2bb5f0f5a92dd974374aaf3e91985f0",
     "packages": [
         {
             "name": "composer/installers",
@@ -663,7 +663,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.7.2",
+            "version": "6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -694,7 +694,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.7.2"
+                "source": "https://github.com/roots/wordpress/tree/6.8"
             },
             "funding": [
                 {
@@ -777,22 +777,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.7.2",
+            "version": "6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.7.2"
+                "reference": "6.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.7.2-no-content.zip",
-                "shasum": "c33ca276601dee0ddf1e80d3e66403929a696e63"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.8-no-content.zip",
+                "reference": "6.8",
+                "shasum": "f6bb25f590bb6dc45d21e26de97b589c5f0703bd"
             },
             "require": {
                 "php": ">= 7.2.24"
             },
             "provide": {
-                "wordpress/core-implementation": "6.7.2"
+                "wordpress/core-implementation": "6.8"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -843,7 +844,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2025-02-11T16:29:31+00:00"
+            "time": "2025-04-15T15:45:35+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -964,6 +965,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": "roots/wp-password-bcrypt",
             "time": "2024-09-10T23:11:22+00:00"
         },
         {
@@ -1355,15 +1357,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.9.8",
+            "version": "6.0.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.9.8"
+                "reference": "tags/6.0.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.9.8.zip"
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.6.0.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1553,15 +1555,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-statistics",
-            "version": "14.13.1",
+            "version": "14.13.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-statistics/",
-                "reference": "tags/14.13.1"
+                "reference": "tags/14.13.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-statistics.14.13.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-statistics.14.13.2.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1571,15 +1573,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
-            "version": "1.12.4",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
-                "reference": "tags/1.12.4"
+                "reference": "tags/2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.12.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.2.0.1.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1677,12 +1679,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "79df35d3a122bdf407423ec09377f60875fe88da"
+                "reference": "4a535062396cc0a0bb7a6bc72e4dc15e8b2018d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/79df35d3a122bdf407423ec09377f60875fe88da",
-                "reference": "79df35d3a122bdf407423ec09377f60875fe88da",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4a535062396cc0a0bb7a6bc72e4dc15e8b2018d0",
+                "reference": "4a535062396cc0a0bb7a6bc72e4dc15e8b2018d0",
                 "shasum": ""
             },
             "conflict": {
@@ -1781,6 +1783,7 @@
                 "civicrm/civicrm-core": ">=4.2,<4.2.9|>=4.3,<4.3.3",
                 "ckeditor/ckeditor": "<4.25",
                 "clickstorm/cs-seo": ">=6,<6.7|>=7,<7.4|>=8,<8.3|>=9,<9.2",
+                "co-stack/fal_sftp": "<0.2.6",
                 "cockpit-hq/cockpit": "<2.7|==2.7",
                 "codeception/codeception": "<3.1.3|>=4,<4.1.22",
                 "codeigniter/framework": "<3.1.9",
@@ -1822,6 +1825,7 @@
                 "devgroup/dotplant": "<2020.09.14-dev",
                 "digimix/wp-svg-upload": "<=1",
                 "directmailteam/direct-mail": "<6.0.3|>=7,<7.0.3|>=8,<9.5.2",
+                "dl/yag": "<3.0.1",
                 "dmk/webkitpdf": "<1.1.4",
                 "dnadesign/silverstripe-elemental": "<5.3.12",
                 "doctrine/annotations": "<1.2.7",
@@ -1907,7 +1911,7 @@
                 "firebase/php-jwt": "<6",
                 "fisharebest/webtrees": "<=2.1.18",
                 "fixpunkt/fp-masterquiz": "<2.2.1|>=3,<3.5.2",
-                "fixpunkt/fp-newsletter": "<1.1.1|>=2,<2.1.2|>=2.2,<3.2.6",
+                "fixpunkt/fp-newsletter": "<1.1.1|>=1.2,<2.1.2|>=2.2,<3.2.6",
                 "flarum/core": "<1.8.10",
                 "flarum/flarum": "<0.1.0.0-beta8",
                 "flarum/framework": "<1.8.10",
@@ -2005,6 +2009,7 @@
                 "james-heinrich/getid3": "<1.9.21",
                 "james-heinrich/phpthumb": "<1.7.12",
                 "jasig/phpcas": "<1.3.3",
+                "jbartels/wec-map": "<3.0.3",
                 "jcbrand/converse.js": "<3.3.3",
                 "joelbutcher/socialstream": "<5.6|>=6,<6.2",
                 "johnbillion/wp-crontrol": "<1.16.2",
@@ -2186,6 +2191,7 @@
                 "pear/archive_tar": "<1.4.14",
                 "pear/auth": "<1.2.4",
                 "pear/crypt_gpg": "<1.6.7",
+                "pear/http_request2": "<2.7",
                 "pear/pear": "<=1.10.1",
                 "pegasus/google-for-jobs": "<1.5.1|>=2,<2.1.1",
                 "personnummer/personnummer": "<3.0.2",
@@ -2245,6 +2251,7 @@
                 "ptheofan/yii2-statemachine": ">=2.0.0.0-RC1-dev,<=2",
                 "ptrofimov/beanstalk_console": "<1.7.14",
                 "pubnub/pubnub": "<6.1",
+                "punktde/pt_extbase": "<1.5.1",
                 "pusher/pusher-php-server": "<2.2.1",
                 "pwweb/laravel-core": "<=0.3.6.0-beta",
                 "pxlrbt/filament-excel": "<1.1.14|>=2.0.0.0-alpha,<2.3.3",
@@ -2461,6 +2468,7 @@
                 "verbb/image-resizer": "<2.0.9",
                 "verbb/knock-knock": "<1.2.8",
                 "verot/class.upload.php": "<=2.1.6",
+                "vertexvaar/falsftp": "<0.2.6",
                 "villagedefrance/opencart-overclocked": "<=1.11.1",
                 "vova07/yii2-fileapi-widget": "<0.1.9",
                 "vrana/adminer": "<4.8.1",
@@ -2473,6 +2481,7 @@
                 "web-auth/webauthn-framework": ">=3.3,<3.3.4|>=4.5,<4.9",
                 "web-auth/webauthn-lib": ">=4.5,<4.9",
                 "web-feet/coastercms": "==5.5",
+                "web-tp3/wec_map": "<3.0.3",
                 "webbuilders-group/silverstripe-kapost-bridge": "<0.4",
                 "webcoast/deferred-image-processing": "<1.0.2",
                 "webklex/laravel-imap": "<5.3",
@@ -2589,7 +2598,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-14T17:05:11+00:00"
+            "time": "2025-04-21T23:05:07+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
