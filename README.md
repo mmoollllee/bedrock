@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<p align="center">WordPress boilerplate with Composer, easier configuration, and an improved folder structure</p>
+<p align="center">WordPress boilerplate with Composer, easier configuration, and an improved folder structure, ready for setup with Laravel Herd App</p>
 
 <p align="center">
   <a href="https://roots.io/bedrock/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/bedrock/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/bedrock/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/">Community</a>
@@ -53,7 +53,18 @@ Bedrock is a WordPress boilerplate for developers that want to manage their proj
 
 See the [Bedrock installation documentation](https://roots.io/bedrock/docs/installation/).
 
+```sh
+git clone git@github.com:mmoollllee/bedrock.git ~/Herd/example
+cd example
+git remote rename origin bedrock
+git remote add origin git@github.com:mmoollllee/example.com.git
+git branch -M master
+git push -u origin master
+sh setup.sh
+```
+
 ## Update
+
 This branch from roots/bedrock
 `git merge bedrock/master --no-commit --no-ff`
 Other project from this branch
@@ -63,21 +74,6 @@ git remote add bedrock git@github.com:mmoollllee/bedrock.git
 git fetch bedrock
 git merge bedrock/master --no-commit --no-ff --allow-unrelated-histories
 ```
-
-## Installation
-
-1. Create a new project:
-   ```sh
-   $ git clone git@github.com:mmoollllee/bedrock.git example.com
-   $ cd example.com
-   $ git remote rename origin bedrock
-   $ git remote add origin git@github.com:mmoollllee/example.com.git
-   $ git branch -M master
-   $ composer install
-   ```
-2. Add `auth.json` for composer ACF installation
-3. Setup Trellis Environment & `trellis reload development`
-4. Admin Login & Options
 
 ## Community
 

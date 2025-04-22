@@ -109,8 +109,8 @@ echo "WordPress installed successfully!"
 
 # Done!
 echo "Project setup complete!"
-read -p "Should I delete myself? (y/n): " -n 1 -r && [[ $REPLY =~ ^[Yy]$ ]]; then
+echo "You can now login at: $WP_HOME/wp-admin"
+if read -p "Should I delete myself? (y/n): " -n 1 -r && [[ $REPLY =~ ^[Yy]$ ]]; then
     echo
     rm -- "$0"
 fi
-echo "You can now login at: $WP_HOME/wp-admin"
