@@ -7,25 +7,25 @@
 
 namespace Deployer;
 
-// Configurate Hostname of stage & production
-$hostname = getenv('DEP_HOSTNAME');
-$stage_hostname = getenv('DEP_STAGE_HOSTNAME') ?: $hostname;
-
 // get directory of projects. Will be used for domain name,...
 set( 'local_root', dirname( __FILE__ ) );
 
 require 'vendor/mmoollllee/bedrock-deployer-7/config/config.php';
 
+// Configurate Hostname of stage & production
+$hostname = getenv('HOSTNAME');
+$stage_hostname = getenv('STAGE_HOSTNAME') ?: $hostname;
+
 // set 
 host( 'stage' )
 	->setHostname( $stage_hostname )
-	->set('remote_user', function () { return getenv('DEP_STAGE_USERNAME') ?: getenv('DEP_USERNAME'); })
-	->set('deploy_path', function () { return getenv('DEP_STAGE_DIR'); });
+	->set('remote_user', function () { return getenv('STAGE_USERNAME') ?: getenv('USERNAME'); })
+	->set('deploy_path', function () { return getenv('STAGE_DIR'); });
 
 host( 'prod' )
 	->setHostname( $hostname )
-	->set('remote_user', function () { return getenv('DEP_USERNAME'); })
-	->set('deploy_path', function () { return getenv('DEP_DIR'); });
+	->set('remote_user', function () { return getenv('USERNAME'); })
+	->set('deploy_path', function () { return getenv('DIR'); });
 
 // Tasks
 desc( 'Deploy whole project' );
