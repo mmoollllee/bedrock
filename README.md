@@ -63,6 +63,7 @@ sh setup.sh
 ```
 
 ## Deploy
+
 - Set your servers hostname in deploy.php
 - Add your SSH key to the server
 - Add your Servers SSH key to your private Github Repository
@@ -72,7 +73,13 @@ sh setup.sh
 ## Update
 
 This branch from roots/bedrock
-`git merge bedrock/master --no-commit --no-ff`
+
+```sh
+git remote add bedrock git@github.com:roots/bedrock.git
+git fetch bedrock
+git merge bedrock/master --no-commit --no-ff
+```
+
 Other project from this branch
 
 ```sh
